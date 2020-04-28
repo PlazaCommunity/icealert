@@ -113,8 +113,11 @@ const TAG = '[MAIN]';
       const now = moment();
       const deadline = moment(timer.date);
       const countdown = moment.duration(deadline - now);
-      message += `📅 ${deadline.tz('Europe/Paris').locale('it').format('LLLL')}\n`
-      message += 'tra '
+      message += `📅 ${deadline
+        .tz('Europe/Paris')
+        .locale('it')
+        .format('LLLL')}\n`;
+      message += 'tra ';
       if (countdown.days()) {
         message += `${countdown.days()} giorni, `;
       }

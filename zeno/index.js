@@ -9,13 +9,19 @@ const TAG = '[ZENO]';
 
 const job = (state, hook) => {
   return async () => {
-    console.log(TAG, `Running job at ${moment().tz('Europe/Paris').locale('en_GB').format('LLLL')}`);
+    console.log(
+      TAG,
+      `Running job at ${moment()
+        .tz('Europe/Paris')
+        .locale('en_GB')
+        .format('LLLL')}`
+    );
     if (state.jobs.zeno.operational) {
       state.jobs.zeno.lastExecution = new Date();
       let result = undefined;
       try {
         const browser = await puppeteer.launch({
-          args: ["--no-sandbox", "--disable-setuid-sandbox"]
+          args: ['--no-sandbox', '--disable-setuid-sandbox'],
         });
         const page = await browser.newPage();
         result = await scrape(page);
