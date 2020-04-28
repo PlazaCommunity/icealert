@@ -1,5 +1,5 @@
 import 'dotenv/config.js';
-import moment from 'moment';
+import moment from 'moment-timezone';
 import low from 'lowdb';
 import FileAsync from 'lowdb/adapters/FileAsync.js';
 
@@ -33,7 +33,7 @@ const TAG = '[MAIN]';
     },
   };
 
-  const bot = telegram.initialize(state);
+  const bot = await telegram.initialize(state);
   logger.initialize(async (message) => {
     if (process.env.NODE_ENV === 'production') {
       return bot.telegram.sendMessage(
@@ -113,7 +113,7 @@ const TAG = '[MAIN]';
       const now = moment();
       const deadline = moment(timer.date);
       const countdown = moment.duration(deadline - now);
-      message += `📅 ${deadline.locale('it').format('LLLL')}\n`
+      message += `📅 ${deadline.tz('Europe/Paris').locale('it').format('LLLL')}\n`
       message += 'tra '
       if (countdown.days()) {
         message += `${countdown.days()} giorni, `;

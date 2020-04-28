@@ -1,5 +1,6 @@
 import puppeteer from 'puppeteer';
 import cron from 'node-cron';
+import moment from 'moment-timezone';
 import fs from 'fs';
 
 import parse from './parse.js';
@@ -8,7 +9,7 @@ const TAG = '[ZENO]';
 
 const job = (state, hook) => {
   return async () => {
-    console.log(TAG, `Running job at ${new Date().toLocaleString('en-GB')}`);
+    console.log(TAG, `Running job at ${moment().tz('Europe/Paris').locale('en_GB').format('LLLL')}`);
     if (state.jobs.zeno.operational) {
       state.jobs.zeno.lastExecution = new Date();
       let result = undefined;
