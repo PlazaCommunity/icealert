@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
     "he": "^1.2.0",
     "lowdb": "^1.0.0",
@@ -17,9 +18,11 @@
     "start": "cross-env NODE_ENV=production node app.js",
     "dev": "cross-env NODE_ENV=development nodemon --ignore data.json app.js"
   },
+  "engines": {
+    "node": "13.12.0"
+  },
   "type": "module",
   "devDependencies": {
-    "cross-env": "^7.0.2",
     "nodemon": "^2.0.3"
   }
 }
