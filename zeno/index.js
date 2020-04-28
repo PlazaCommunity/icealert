@@ -17,7 +17,7 @@ const job = (state, hook) => {
         .format('LLLL')}`
     );
     if (state.jobs.zeno.operational) {
-      state.jobs.zeno.lastExecution = new Date();
+      state.jobs.zeno.lastExecution = moment().tz('Europe/Paris').toDate();
       let result = undefined;
       try {
         const browser = await puppeteer.launch({
@@ -39,7 +39,7 @@ const job = (state, hook) => {
 const schedule = async (state, hook) => {
   if (process.env.NODE_ENV === 'production') {
     job(state, hook)();
-    cron.schedule('*/15 9-19 * * *', job(state, hook));
+    cron.schedule('*/15 7-17 * * *', job(state, hook)); // UTC time
   } else {
     job(state, hook)();
   }
