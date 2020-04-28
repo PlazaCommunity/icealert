@@ -1,0 +1,11 @@
+# macOS indexing
+.DS_Store
+
+# modules
+node_modules
+
+# secrets
+.env 
+
+# database
+data.json
