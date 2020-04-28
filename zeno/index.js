@@ -13,7 +13,9 @@ const job = (state, hook) => {
       state.jobs.zeno.lastExecution = new Date();
       let result = undefined;
       try {
-        const browser = await puppeteer.launch({ args: ['--no-sandbox'] });
+        const browser = await puppeteer.launch({
+          args: ["--no-sandbox", "--disable-setuid-sandbox"]
+        });
         const page = await browser.newPage();
         result = await scrape(page);
         await browser.close();
