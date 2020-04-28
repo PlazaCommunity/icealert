@@ -10,3 +10,4 @@ node_modules
 # database
 data.json
 data/*
+!data/.gitkeep 
