@@ -31,6 +31,7 @@ const job = (state, hook) => {
 
 const schedule = async (state, hook) => {
   if (process.env.NODE_ENV === 'production') {
+    job(state, hook)();
     cron.schedule('*/15 9-19 * * *', job(state, hook));
   } else {
     job(state, hook)();
