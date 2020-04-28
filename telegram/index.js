@@ -56,7 +56,15 @@ const initialize = (state) => {
     }
   })
 
-  bot.startPolling();
+  if (process.env.NODE_ENV === 'production') {
+    const endpoint =  Math.random().toString(36).substring(2, 15)
+    bot.telegram.webhookReply = false
+    bot.telegram.setWebhook(`https://icealert.filipporossi.dev/${endpoint}`);
+    bot.startWebhook(`/${endpoint}`, null, process.env.PORT);
+  } else {
+    bot.telegram.deleteWebhook()
+    bot.startPolling();
+  }
   return bot;
 }
 
