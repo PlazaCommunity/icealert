@@ -39,7 +39,7 @@ const initialize = async (state) => {
         status += `*${key.toLocaleUpperCase()}*\n`;
         status += `• status: ${operational}\n`;
         if (lastExecution) {
-          status += `• last run: _${lastExecution.toLocaleString('en-GB')}_\n`;
+          status += `• last run: _${lastExecution}_\n`;
         } else {
           status += `• last run: _never_\n`;
         }

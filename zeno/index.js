@@ -17,7 +17,10 @@ const job = (state, hook) => {
         .format('LLLL')}`
     );
     if (state.jobs.zeno.operational) {
-      state.jobs.zeno.lastExecution = moment().tz('Europe/Paris').toDate();
+      state.jobs.zeno.lastExecution = moment()
+        .tz('Europe/Paris')
+        .locale('en_GB')
+        .format('LLLL');
       let result = undefined;
       try {
         const browser = await puppeteer.launch({

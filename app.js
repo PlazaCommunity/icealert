@@ -1,6 +1,7 @@
 import 'dotenv/config.js';
 import moment from 'moment-timezone';
 import low from 'lowdb';
+import path from 'path';
 import FileAsync from 'lowdb/adapters/FileAsync.js';
 
 import zeno from './zeno/index.js';
@@ -13,10 +14,15 @@ const GROUP =
     ? process.env.TELEGRAM_GROUP_ID_PRD
     : process.env.TELEGRAM_GROUP_ID_DEV;
 
+const STORAGE =
+  process.env.NODE_ENV === 'production'
+    ? process.env.STORAGE_PRD
+    : process.env.STORAGE_DEV;
+
 const TAG = '[MAIN]';
 
 (async () => {
-  const adapter = new FileAsync('data.json');
+  const adapter = new FileAsync(path.join(STORAGE), 'data.json');
   const db = await low(adapter);
 
   db.defaults({
