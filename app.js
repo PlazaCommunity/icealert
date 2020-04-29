@@ -22,7 +22,8 @@ const STORAGE =
 const TAG = '[MAIN]';
 
 (async () => {
-  const adapter = new FileAsync(path.join(STORAGE), 'data.json');
+  console.log("writing to: ", STORAGE, " ",  path.join(STORAGE, 'data.json'))
+  const adapter = new FileAsync(path.join(STORAGE, 'data.json'));
   const db = await low(adapter);
 
   db.defaults({
