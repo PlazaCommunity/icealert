@@ -1,16 +1,23 @@
 import cheerio from 'cheerio';
-import crypto from 'crypto';
 import he from 'he';
 
+import Activity from '../types/activity.js';
+import Section from '../types/section.js';
+import Timer from '../types/timer.js';
+
 const ICONS_MAP = {
-  'magnifier.png': 'ESERCIZIO',
-  'yt4.png': 'VIDEO',
-  'pdfdown4.png': 'PDF',
-  'bbb4.png': 'REGISTRAZIONE LIVE',
-  'book4.png': 'SUGGERIMENTO',
-  'wiki4.png': 'WIKI',
-  'spritz4.png': 'SPRITZ',
-  'link.png': 'LINK',
+  'link.png': Activity.types.URL,
+  'bbb4.png': Activity.types.LIVE,
+  'yt4.png': Activity.types.VIDEO,
+  'book4.png': Activity.types.WIKI,
+  'wiki4.png': Activity.types.WIKI,
+  'quiz4.png': Activity.types.FILE,
+  'spritz4.png': Activity.types.FUN,
+  'written4.png': Activity.types.EXAM,
+  'pdfdown4.png': Activity.types.FILE,
+  'calendar4.png': Activity.types.DATE,
+  'magnifier.png': Activity.types.FILE,
+  'photowhite4.png': Activity.types.FILE,
 };
 
 const CLEAN_LIST = [
@@ -18,8 +25,12 @@ const CLEAN_LIST = [
   "Suggerimenti teorici per l'",
 ];
 
-const typeFromIcon = (src) => {
-  return ICONS_MAP[src.substring(src.lastIndexOf('/') + 1)];
+const typeFromURL = (src) => {
+  src = src.substring(src.lastIndexOf('/') + 1).trim();
+  if (Object.keys(ICONS_MAP).includes(src)) {
+    return ICONS_MAP[src];
+  }
+  return Activity.types.NO_TYPE;
 };
 
 const d = (html) => {
@@ -35,86 +46,98 @@ const d = (html) => {
   }
 };
 
+const activity = (activityHTML) => {
+  const $ = cheerio.load(activityHTML);
+  const name = d($('table tbody tr').html());
+
+  const activity = new Activity();
+  activity.name = name;
+  activity.link = $('a').attr('href');
+
+  const src = $('table tbody tr img').attr('src')
+  activity.type = typeFromURL(src);
+
+  activity.hash = activity.createHash();
+  return activity;
+};
+
+const video = (videoHTML) => {
+  const $ = cheerio.load(videoHTML);
+  const activity = new Activity();
+  if ($('iframe').length) {
+    activity.name = 'Youtube Video';
+    activity.link = $('iframe').attr('src');
+  } else {
+    activity.name = $('video').attr('title') || 'video.mp4';
+    activity.link = $('source').attr('src');
+  }
+
+  activity.type = Activity.types.VIDEO;
+
+  activity.hash = activity.createHash();
+  return activity;
+};
+
+const timer = (timerHTML) => {
+  const $ = cheerio.load(timerHTML);
+  const scriptHTML = $('script').html();
+  const dateREGEX = /var deadline = '(.*)';/im;
+
+  if (dateREGEX.test(scriptHTML)) {
+    const timer = new Timer();
+    timer.name = d($('p').html());
+    timer.date = new Date(dateREGEX.exec(scriptHTML)[1]);
+    timer.hash = timer.createHash();
+
+    return timer;
+  }
+  
+  return undefined;
+};
+
+const section = (sectionHTML) => {
+  const $ = cheerio.load(sectionHTML);
+  const label = $('span.sectionname').text();
+  let section = new Section();
+  section.label = label;
+  section.timers = {};
+
+  if (label) {
+    $('li.activity').each((_, element) => {
+      const hasName = !!$(element).find('table tbody tr').text();
+      const isVideo = $(element).find('.mediaplugin_videojs').length;
+      const isTimer = $(element).find('.seconds').length;
+
+      if (hasName) {
+        const res = activity($(element).find('.activity-wrapper').html())
+        if (res) section.activities[res.hash] = res;
+      }
+
+      if (isVideo) {
+        const res = video($(element).find('.activity-wrapper').html())
+        if (res) section.activities[res.hash] = res;
+      }
+
+      if (isTimer) {
+        const res = timer($(element).find('.activity-wrapper').html())
+        if (res) section.timers[res.hash] = res;
+      }
+    });
+
+    section.hash = section.createHash();
+    return section;
+  }
+
+  return null;
+};
+
 const home = (homeHTML) => {
-  let $ = cheerio.load(homeHTML);
+  const $ = cheerio.load(homeHTML);
   let home = [];
 
-  $('ul.buttons li').each((index, element) => {
-    const label = $(element).attr('aria-label');
-    const url = $(element).find('.sectionname a').attr('href');
-    if (label) {
-      let section = { label, url, activities: {}, timers: {} };
-      $(element)
-        .find('ul.section li.activity')
-        .each((_, element) => {
-          const name = d($(element).find('table tbody tr').html());
-
-          // It's an activity
-          // Activity: {name, link, type?}
-          if (name) {
-            const activity = {};
-            activity.name = name;
-            activity.link = $(element).find('a').attr('href');
-            if (label !== 'General') {
-              activity.type = typeFromIcon(
-                $(element).find('table tbody tr img').attr('src')
-              );
-            }
-
-            activity.hash = crypto
-              .createHash('sha256')
-              .update(JSON.stringify(activity))
-              .digest('hex');
-            section.activities[activity.hash] = activity;
-            return;
-          }
-
-          // It's a video,
-          // subclass of acitivy
-          if ($(element).find('.mediaplugin_videojs').length) {
-            const activity = {};
-            // youtube...
-            if ($(element).find('iframe').length) {
-              activity.name = 'Youtube Video';
-              activity.link = $(element).find('iframe').attr('src');
-            }
-            // self hosted...
-            else {
-              activity.name = $(element).find('video').attr('title');
-              activity.link = $(element).find('source').attr('src');
-            }
-            activity.type = 'VIDEO';
-
-            activity.hash = crypto
-              .createHash('sha256')
-              .update(JSON.stringify(activity))
-              .digest('hex');
-            section.activities[activity.hash] = activity;
-          }
-
-          // It's a timer
-          // Timer: { title, date }
-          if ($(element).find('.seconds').length) {
-            const scriptHTML = $(element).find('script').html();
-            const dateREGEX = /var deadline = '(.*)';/im;
-            if (dateREGEX.test(scriptHTML)) {
-              const timer = {};
-              timer.name = d($(element).find('p').html());
-              timer.date = new Date(dateREGEX.exec(scriptHTML)[1]);
-              timer.hash = crypto
-                .createHash('sha256')
-                .update(JSON.stringify(timer))
-                .digest('hex');
-              section.timers[timer.hash] = timer;
-            }
-          }
-        });
-      section.hash = crypto
-        .createHash('sha256')
-        .update(JSON.stringify(section))
-        .digest('hex');
-      home.push(section);
-    }
+  $('ul.buttons li').each((_, element) => {
+    const res = section($(element).html())
+    if (res) home.push(res);
   });
   return home;
 };

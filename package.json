@@ -17,7 +17,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon --ignore data.json app.js"
+    "dev": "cross-env NODE_ENV=development nodemon --ignore 'storage/*' --ignore 'data/*' app.js"
   },
   "engines": {
     "node": "13.12.0"

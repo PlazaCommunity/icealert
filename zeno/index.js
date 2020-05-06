@@ -3,7 +3,9 @@ import cron from 'node-cron';
 import moment from 'moment-timezone';
 import fs from 'fs';
 
+import notify from './notify.js'
 import parse from './parse.js';
+import Class from '../types/class.js';
 
 const TAG = '[ZENO]';
 
@@ -65,11 +67,16 @@ const scrape = async (page) => {
       const home = await parse.home(homeHTML);
       const live = await parse.live(liveHTML);
 
+      const fisica = new Class();
+      fisica.sections = home
+      fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
+      fisica.live = live;
+      const zeno = {"Fisica 1": fisica};
+
+      fs.writeFile('data/zeno.json', JSON.stringify(zeno, null, 2), () => {});
+
       console.log(TAG, 'Completed job');
-      return {
-        home,
-        live,
-      };
+      return zeno;
     }
   }
 
@@ -106,15 +113,19 @@ const scrape = async (page) => {
     fs.writeFile('data/zeno-live.html', liveHTML, () => {});
   }
 
+  const fisica = new Class();
+  fisica.sections = home
+  fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
+  fisica.live = live;
+  const zeno = {"Fisica 1": fisica};
+
   console.log(TAG, 'Completed job');
 
-  return {
-    home,
-    live,
-  };
+  return zeno;
 };
 
 export default {
   schedule,
   scrape,
+  notify,
 };
