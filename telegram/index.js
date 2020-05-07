@@ -2,8 +2,43 @@ import Telegraf from 'telegraf';
 import Extra from 'telegraf/extra.js';
 import Markup from 'telegraf/markup.js';
 
-const initialize = async (state) => {
+const validURL = (str) => {
+  var pattern = new RegExp(
+    '^(https?:\\/\\/)?' + // protocol
+    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.)+[a-z]{2,}|' + // domain name
+    '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+    '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+      '(\\#[-a-z\\d_]*)?$',
+    'i'
+  ); // fragment locator
+  return !!pattern.test(str);
+};
+
+const initialize = async (state, db) => {
   const bot = new Telegraf(process.env.TELEGRAM_TOKEN);
+
+  const regex = /^\/([^@\s]+)@?(?:(\S+)|)\s?([\s\S]+)?$/i;
+  
+  bot.use((ctx, next) => {
+    if (ctx.updateType === 'message' && ctx.updateSubTypes.includes('text')) {
+      const parts = regex.exec(ctx.message.text.trim());
+      if (!parts) return next();
+      const command = {
+        text: ctx.message.text,
+        command: parts[1],
+        bot: parts[2],
+        args: parts[3],
+        get splitArgs() {
+          return !parts[3]
+            ? []
+            : parts[3].split(/\s+/).filter((arg) => arg.length);
+        },
+      };
+      ctx.command = command;
+    }
+    return next();
+  });
 
   bot.use((ctx, next) => {
     if (ctx.updateType === 'message' && ctx.from) {
@@ -49,6 +84,51 @@ const initialize = async (state) => {
         status += '\n\n';
       });
       return ctx.replyWithMarkdown(status);
+    }
+  });
+
+  bot.command('hook', async (ctx) => {
+    if (ctx.from.is_admin) {
+      const args = ctx.command.splitArgs;
+      const mode = args[0];
+      const channels = db.get('bot.webhooks');
+      if (mode === 'add' && args[1] && args[2]) {
+        if (validURL(args[2])) {
+          channels
+            .push({
+              name: args[1],
+              url: args[2],
+            })
+            .write()
+          return ctx.replyWithMarkdown('✅ *Added*');
+        }
+        return ctx.replyWithMarkdown('🛑 *No valid URL*');
+      } else if (mode === 'remove' && args[1]) {
+        channels
+          .remove({
+            name: args[1],
+          })
+          .write()
+          .then((a) => {
+            if (a.length) {
+              return ctx.replyWithMarkdown('🗑 *Deleted*');
+            }
+            return ctx.replyWithMarkdown('❌ *Not found*');
+          })
+      } else if (mode === 'list') {
+        const list = await channels.value();
+        let message = '〽️*Webhooks*\n\n';
+        if (list.length) {
+          message += '👇👇👇';
+          list.forEach((hook) => {
+            message += `\n\n*${hook.name}:*\n`;
+            message += `\`${hook.url}\`\n`;
+          });
+        } else {
+          message += '❌ No webhooks found'
+        }
+        return ctx.replyWithMarkdown(message);
+      }
     }
   });
 

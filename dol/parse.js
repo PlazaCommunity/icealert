@@ -8,8 +8,8 @@ const TYPE_MAP = {
   'Video': Activity.types.VIDEO,
   'Kaltura Video Resource': Activity.types.VIDEO,
   'URL': Activity.types.URL,
-  'Cartella': Activity.types.URL,
-  'Forum': Activity.types.Forum,
+  'Cartella': Activity.types.FOLDER,
+  'Forum': Activity.types.FORUM,
 }
 
 const fromType = (type) => {

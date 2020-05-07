@@ -69,6 +69,7 @@ const scrape = async (page) => {
 
       const fisica = new Class();
       fisica.sections = home
+      fisica.name = "Fisica 1"
       fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
       fisica.live = live;
       const zeno = {"Fisica 1": fisica};
@@ -118,6 +119,7 @@ const scrape = async (page) => {
 
   const fisica = new Class();
   fisica.sections = home
+  fisica.name = "Fisica 1"
   fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
   fisica.live = live;
   const zeno = {"Fisica 1": fisica};

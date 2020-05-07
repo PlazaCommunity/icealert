@@ -27,7 +27,7 @@ class Activity {
   };
 
   static icons = {
-    URL: '🔗',
+    URL: '🌐',
     FUN: '🍹',
     FILE: '📚',
     DATE: '📅',

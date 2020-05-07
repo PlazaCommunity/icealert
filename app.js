@@ -17,6 +17,9 @@ const TAG = '[MAIN]';
   const db = await low(adapter);
 
   db.defaults({
+    bot: {
+      webhooks: [],
+    },
     zeno: undefined,
     dol: undefined,
   }).write();
@@ -36,7 +39,7 @@ const TAG = '[MAIN]';
     },
   };
 
-  const bot = await telegram.initialize(state);
+  const bot = await telegram.initialize(state, db);
   logger.initialize(async (message) => {
     if (process.env.NODE_ENV === 'production') {
       return bot.telegram.sendMessage(

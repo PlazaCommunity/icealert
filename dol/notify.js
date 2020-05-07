@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 import telegram from '../telegram/index.js';
 import config from '../config/index.js';
 
@@ -23,6 +25,8 @@ const notify = (bot, db) => async (result) => {
     bot.telegram.sendMessage(config.ADMIN, message, telegram.Extra.markdown());
     return;
   }
+
+  const hooks = await db.get('bot.webhooks').value();
 
   Object.keys(result.classes).forEach((name) => {
     const post = result.classes[name];
@@ -66,6 +70,28 @@ const notify = (bot, db) => async (result) => {
         .catch((err) => {
           console.error(TAG, err.message || 'Error');
         });
+
+        hooks.forEach((hook) => {
+          axios.post(hook.url, {
+            "username": "ICE alert",
+            "avatar_url": "https://i.imgur.com/9Ut9KRw.jpg",
+            "embeds": [
+              {
+                "title": post.name,
+                "url": post.url,
+                "description": text,
+                "color": 15258703,
+                "footer": {
+                  "text": "made by Filippo Rossi <3",
+                  "icon_url": "https://www.gravatar.com/avatar/c6f9b5cada1f83e998c40ed89a929990"
+                }
+              }
+            ]
+          })
+          .catch((err) => {
+            console.error(TAG, err.message || 'Error');
+          });
+        })
     }
   });
 

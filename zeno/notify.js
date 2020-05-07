@@ -1,3 +1,5 @@
+import axios from 'axios'
+
 import telegram from '../telegram/index.js';
 import config from '../config/index.js';
 
@@ -26,7 +28,7 @@ const notify = (bot, db) => (
     // Check if the professor went live
     if (pre.live.isLive != post.live.isLive) {
       if (post.live.isLive) {
-        const message = '🎓*Fisica*\n\n🅾️ Zeno è ora *in live*.';
+        const message = `🎓*${COURSE}*\n\n🅾️ Zeno è ora *in live*.`;
         const keyboard = telegram.Markup.inlineKeyboard([
           telegram.Markup.urlButton(
             '👀 Guarda ora!',
@@ -39,7 +41,7 @@ const notify = (bot, db) => (
           telegram.Extra.markdown().markup(keyboard)
         );
       } else {
-        const message = '🎓*Fisica*\n\n🅾️ Zeno ha *terminato la sua live*.';
+        const message = `🎓*${COURSE}*\n\n🅾️ Zeno ha *terminato la sua live*.`;
         bot.telegram.sendMessage(config.GROUP, message, telegram.Extra.markdown());
       }
     }
@@ -81,8 +83,10 @@ const notify = (bot, db) => (
       }
     });
 
+    const hooks = await db.get('bot.webhooks').value();
+
     if (message) {
-      let text = '🎓*Fisica*'
+      let text = `🎓*${COURSE}*`
       text += message;
       try {
         await bot.telegram.sendMessage(
@@ -90,12 +94,31 @@ const notify = (bot, db) => (
           text,
           telegram.Extra.markdown().webPreview(false)
         );
+
+        hooks.forEach((hook) => {
+          axios.post(hook.url, {
+            "username": "ICE alert",
+            "avatar_url": "https://i.imgur.com/9Ut9KRw.jpg",
+            "embeds": [
+              {
+                "title": post.name,
+                "url": post.url,
+                "description": text,
+                "color": 15258703,
+                "footer": {
+                  "text": "made by Filippo Rossi <3",
+                  "icon_url": "https://www.gravatar.com/avatar/c6f9b5cada1f83e998c40ed89a929990"
+                }
+              }
+            ]
+          })
+        });
+
+        db.set('zeno', result).write();
       } catch(err) {
         console.error(TAG, err.message || 'Error')
       }
     }
-
-    db.set('zeno', result).write();
   }
 )
 
