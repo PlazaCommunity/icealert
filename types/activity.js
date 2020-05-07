@@ -7,7 +7,7 @@ const excape = (msg) => {
 class Activity {
   static types = {
     URL: 'URL',
-    URL: 'FUN',
+    FUN: 'FUN',
     FILE: 'FILE',
     DATE: 'DATE',
     WIKI: 'WIKI',
