@@ -4,6 +4,13 @@ const excape = (msg) => {
   return msg.replace(/((\_|\*|\~|\`|\|))/g, '\\$1');
 }
 
+const excapeURL = (msg) => {
+  msg = msg.replace(/_/g, '%5F');
+  msg = msg.replace(/\(/g, '%28');
+  msg = msg.replace(/\)/g, '%29');
+  return encodeURI(msg);
+}
+
 class Activity {
   static types = {
     URL: 'URL',
@@ -53,11 +60,11 @@ class Activity {
   toMarkdown() {
     let message = ''
     if (this.type) {
-      message += `${Activity.icons[this.type]}`;
+      message += `${Activity.icons[this.type]} `;
     }
     message += `${excape(this.name)}`;
     if (this.link) {
-      message += ` [🔗 Link](${this.link})`;
+      message += ` [🔗 Link](${excapeURL(this.link)})`;
     }
     return message;
   }
