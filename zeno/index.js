@@ -80,6 +80,9 @@ const scrape = async (page) => {
     }
   }
 
+  // Zeno's page sometime timeouts at 30'000
+  await page.setDefaultNavigationTimeout(60000);
+
   console.log(TAG, 'Browsing zenogaburro.com with puppeteer');
   await page.goto('https://zenogaburro.com/login/index.php');
 
