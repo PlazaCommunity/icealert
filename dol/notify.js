@@ -55,7 +55,7 @@ const notify = (bot, db) => async (result) => {
     });
 
     if (message) {
-      let text = `${COURSE_EMOJI[post.name]} *${post.name}*`;
+      let text = `${COURSE_EMOJI[name]} *${name}*`;
       text += message;
       bot.telegram
         .sendMessage(
