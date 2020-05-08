@@ -74,7 +74,6 @@ const initialize = async (db, state) => {
    */
   bot.use((ctx, next) => {
     if (ctx.updateType === 'message' && ctx.from) {
-      console.log(ctx.from);
       ctx.from.is_admin = String(ctx.from.id) == config.TELEGRAM_ADMIN;
     }
     return next();
