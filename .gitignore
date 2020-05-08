@@ -8,8 +8,8 @@ node_modules
 .env 
 
 # cache database
-data/*
-!data/.gitkeep 
+cache/*
+!cache/.gitkeep 
 
 # persistent storage
 storage/*

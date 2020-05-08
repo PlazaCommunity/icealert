@@ -5,6 +5,7 @@
   "license": "MIT",
   "dependencies": {
     "axios": "^0.19.2",
+    "basetag": "^1.0.0",
     "cheerio": "^1.0.0-rc.3",
     "cross-env": "^7.0.2",
     "dotenv": "^8.2.0",
@@ -18,7 +19,7 @@
   },
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon --ignore 'storage/*' --ignore 'data/*' app.js"
+    "dev": "cross-env NODE_ENV=development nodemon --ignore 'storage/*' --ignore '.cache/*' app.js"
   },
   "engines": {
     "node": "13.12.0"

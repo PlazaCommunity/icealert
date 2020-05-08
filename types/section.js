@@ -2,8 +2,8 @@ import crypto from 'crypto';
 
 class Section {
   constructor() {
-    this.label = 'Unnamed section'
-    this.activities = {}
+    this.label = 'Unnamed section';
+    this.activities = {};
   }
   createHash() {
     return crypto

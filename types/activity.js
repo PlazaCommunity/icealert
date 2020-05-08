@@ -2,14 +2,14 @@ import crypto from 'crypto';
 
 const excape = (msg) => {
   return msg.replace(/((\_|\*|\~|\`|\|))/g, '\\$1');
-}
+};
 
 const excapeURL = (msg) => {
   msg = msg.replace(/_/g, '%5F');
   msg = msg.replace(/\(/g, '%28');
   msg = msg.replace(/\)/g, '%29');
   return encodeURI(msg);
-}
+};
 
 class Activity {
   static types = {
@@ -23,7 +23,7 @@ class Activity {
     VIDEO: 'VIDEO',
     FORUM: 'FORUM',
     FOLDER: 'FOLDER',
-    NO_TYPE: 'NO_TYPE'
+    NO_TYPE: 'NO_TYPE',
   };
 
   static icons = {
@@ -37,7 +37,7 @@ class Activity {
     VIDEO: '🎥',
     FORUM: '👥',
     FOLDER: '📂',
-    NO_TYPE: '➕'
+    NO_TYPE: '➕',
   };
 
   constructor() {
@@ -58,7 +58,7 @@ class Activity {
   // link
   // hash?
   toMarkdown() {
-    let message = ''
+    let message = '';
     if (this.type) {
       message += `${Activity.icons[this.type]} `;
     }

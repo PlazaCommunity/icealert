@@ -1,7 +1,7 @@
 class Class {
   constructor() {
     this.sections = [];
-    this.url = ''
+    this.url = '';
   }
 }
 

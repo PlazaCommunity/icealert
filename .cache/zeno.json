@@ -1,0 +1,1307 @@
+{
+  "Fisica 1": {
+    "sections": [
+      {
+        "label": "General",
+        "activities": {
+          "b3fff3f18f0698981c4491d3ed82178ef91477b2d2830a6f6c10318d2174b67d": {
+            "name": "Test: Nuovo server Jitsi.",
+            "type": "NO_TYPE",
+            "link": "https://zenogaburro.com/mod/jitsi/view.php?id=776",
+            "hash": "b3fff3f18f0698981c4491d3ed82178ef91477b2d2830a6f6c10318d2174b67d"
+          },
+          "268df9f56d3866e34b20d04d80394476665f80ae3670df2830105d8a008c70cc": {
+            "name": "Syllabus (in costruzione)",
+            "type": "FILE",
+            "hash": "268df9f56d3866e34b20d04d80394476665f80ae3670df2830105d8a008c70cc"
+          },
+          "1cf8b837b9d5927c50c016af69a907a79e9fd98918a2e5d30bec70a7485e619c": {
+            "name": "Sondaggio: Orario provetta di sabato.",
+            "type": "DATE",
+            "link": "https://zenogaburro.com/mod/choice/view.php?id=736",
+            "hash": "1cf8b837b9d5927c50c016af69a907a79e9fd98918a2e5d30bec70a7485e619c"
+          },
+          "7ca2345ec23f1b3ba9336823d40233a99c272edd9304bd46ed6dd12e2856cff3": {
+            "name": "Live lessons",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/bigbluebuttonbn/view.php?id=130",
+            "hash": "7ca2345ec23f1b3ba9336823d40233a99c272edd9304bd46ed6dd12e2856cff3"
+          },
+          "0c846e06e6f366a04689c3283f169a5830a0a560af82fd6fa185fb956dc5142b": {
+            "name": "Peer-Reviewed Exams",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=663",
+            "hash": "0c846e06e6f366a04689c3283f169a5830a0a560af82fd6fa185fb956dc5142b"
+          },
+          "7951000675c566aeb75cf934b30feaeb8ab7f9153d8857aa24e2f7250ea3acfb": {
+            "name": "Iscrizione / Ritiro Prova Peer-Reviewed 9 Maggio 2020 14:00 (provvisorio)",
+            "type": "DATE",
+            "link": "https://zenogaburro.com/mod/choicegroup/view.php?id=768",
+            "hash": "7951000675c566aeb75cf934b30feaeb8ab7f9153d8857aa24e2f7250ea3acfb"
+          },
+          "69c3521ad294f599f1a7b273ad23ba08314566a8aa5b1062d718aab8d01b57b2": {
+            "name": "Prova Peer-Reviewed 9 Maggio 2020 14:00 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=771",
+            "hash": "69c3521ad294f599f1a7b273ad23ba08314566a8aa5b1062d718aab8d01b57b2"
+          },
+          "d499c4385b4c1ca2e55fa781ca6ff2b7060c4cef9a7f78460973bff90da9fb27": {
+            "name": "Prova Peer-Reviewed 6 Maggio 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=765",
+            "hash": "d499c4385b4c1ca2e55fa781ca6ff2b7060c4cef9a7f78460973bff90da9fb27"
+          },
+          "f16e2c197ced9bb848843c6ad4ae0325a64f843670f87e4e29fea58376549216": {
+            "name": "Prova Peer-Reviewed 22 Aprile 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=681",
+            "hash": "f16e2c197ced9bb848843c6ad4ae0325a64f843670f87e4e29fea58376549216"
+          },
+          "30032c87196c78d6e9a96a3ac40a5e57f283e0c14cfb3e59e56314aab85bfe4a": {
+            "name": "Prova Peer-Reviewed 8 Aprile 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=615",
+            "hash": "30032c87196c78d6e9a96a3ac40a5e57f283e0c14cfb3e59e56314aab85bfe4a"
+          },
+          "ce499b1948cc97e74a184eb5222889951330e7d3240f16c7a3e96b1608158e8c": {
+            "name": "Prova Peer-Reviewed 25 Marzo 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=587",
+            "hash": "ce499b1948cc97e74a184eb5222889951330e7d3240f16c7a3e96b1608158e8c"
+          },
+          "487462cfd7cb3c627be6d39784837bb05308ee45b4a41b5c63f9f1c3f3daaa79": {
+            "name": "Prova Peer-Reviewed 18 Marzo 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=553",
+            "hash": "487462cfd7cb3c627be6d39784837bb05308ee45b4a41b5c63f9f1c3f3daaa79"
+          },
+          "13f87bc4ca66b13b0d94f2ce037d7607c70fb3f9540cd9916a1e8ed2232a8d4c": {
+            "name": "Prova Peer-Reviewed 11 Marzo 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=508",
+            "hash": "13f87bc4ca66b13b0d94f2ce037d7607c70fb3f9540cd9916a1e8ed2232a8d4c"
+          },
+          "1a394db6fae40426054a42b47aac76f75272afdd0b312a2390a673bd9fe7f94b": {
+            "name": "Prova Peer-Reviewed 27 Febbraio 2020 12:30 ",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/workshop/view.php?id=472",
+            "hash": "1a394db6fae40426054a42b47aac76f75272afdd0b312a2390a673bd9fe7f94b"
+          },
+          "da59c01625f6bc8068d98d623cd214be619e8203693689ebd2bec5bc2f3b95ea": {
+            "name": "Exams",
+            "type": "EXAM",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=371",
+            "hash": "da59c01625f6bc8068d98d623cd214be619e8203693689ebd2bec5bc2f3b95ea"
+          },
+          "07143e378e04b24b54e1f42cb120a98dcf1fe2d7b993c2b3299cae6c178b4275": {
+            "name": "Tutors",
+            "type": "NO_TYPE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=565",
+            "hash": "07143e378e04b24b54e1f42cb120a98dcf1fe2d7b993c2b3299cae6c178b4275"
+          },
+          "4978be9c918fa482e4eec1aff1591c489322036979eb4b7f4c9367e11c5ee0b1": {
+            "name": "Libri consigliati",
+            "type": "WIKI",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=706",
+            "hash": "4978be9c918fa482e4eec1aff1591c489322036979eb4b7f4c9367e11c5ee0b1"
+          },
+          "5159d4d51f3b55a44428363b07efb04ad124d199b9779393ce90c6d05d18bc58": {
+            "name": "FisiCaffè",
+            "type": "NO_TYPE",
+            "link": "https://zenogaburro.com/mod/forum/view.php?id=463",
+            "hash": "5159d4d51f3b55a44428363b07efb04ad124d199b9779393ce90c6d05d18bc58"
+          },
+          "eff9d3d7d5fd28757ba6bec27df8e4e4d6179546dfaffc2ca59ddd1f56f9d20a": {
+            "name": "FiSpritz Coming Soon!",
+            "type": "FUN",
+            "hash": "eff9d3d7d5fd28757ba6bec27df8e4e4d6179546dfaffc2ca59ddd1f56f9d20a"
+          },
+          "3496f6374aaf5a20b913b68e37a2464a48bc506db817be2580eb4778dbcd270e": {
+            "name": "Plaza",
+            "type": "NO_TYPE",
+            "link": "https://plaza.community/c/fisica-1",
+            "hash": "3496f6374aaf5a20b913b68e37a2464a48bc506db817be2580eb4778dbcd270e"
+          },
+          "127bc794581879eff5c69e999b7c2ed2eab3b8ce2da737f28ed66161d9cb31bc": {
+            "name": "FisiCartella",
+            "type": "NO_TYPE",
+            "link": "https://zenogaburro.com/mod/folder/view.php?id=593",
+            "hash": "127bc794581879eff5c69e999b7c2ed2eab3b8ce2da737f28ed66161d9cb31bc"
+          },
+          "5a731acbe40baecd6d9252d11f4dd2811f829eabb849ffeaf1467387e6552b10": {
+            "name": "Announcements",
+            "type": "NO_TYPE",
+            "link": "https://zenogaburro.com/mod/forum/view.php?id=46",
+            "hash": "5a731acbe40baecd6d9252d11f4dd2811f829eabb849ffeaf1467387e6552b10"
+          },
+          "16b249430cd1cb178c6310b9aa30d817406ce10ee442e3c26e2da219632b645a": {
+            "name": "Attendance",
+            "type": "DATE",
+            "link": "https://zenogaburro.com/mod/attendance/view.php?id=419",
+            "hash": "16b249430cd1cb178c6310b9aa30d817406ce10ee442e3c26e2da219632b645a"
+          },
+          "1042a6b07d085500dde4633a4029ca26d95c4101fb013ecc9c3cec3bb8a1acc5": {
+            "name": "Timetables",
+            "type": "DATE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=420",
+            "hash": "1042a6b07d085500dde4633a4029ca26d95c4101fb013ecc9c3cec3bb8a1acc5"
+          },
+          "5903ac09109984f314ec15f5721fef60fe8b2c3a23c99ac96cfc6d4e3fc99dca": {
+            "name": "Click here",
+            "type": "FILE",
+            "hash": "5903ac09109984f314ec15f5721fef60fe8b2c3a23c99ac96cfc6d4e3fc99dca"
+          },
+          "c4cf13077ede686d0d1aeaf52d89b8f74f54901fb5621094ba47a1eba40820c4": {
+            "name": "Lucrezio #01",
+            "type": "FILE",
+            "hash": "c4cf13077ede686d0d1aeaf52d89b8f74f54901fb5621094ba47a1eba40820c4"
+          }
+        },
+        "timers": {
+          "3c70f4628b55bf7143cbc4e173768867a7af2b75ecedacc711cac4dc0b1ea2c9": {
+            "name": "Chiusura sondaggio Orario provette sabato: Giovedì 7 Maggio 2020 h 18:00",
+            "date": "2020-05-07T16:00:00.000Z",
+            "hash": "3c70f4628b55bf7143cbc4e173768867a7af2b75ecedacc711cac4dc0b1ea2c9"
+          },
+          "f9bd61da83c37d6ac15a728e399f7e63caf3b4d492081031c43b6afb116d28b3": {
+            "name": "Prossima Prova Peer-Reviewed: (campi e potenziali geometria cilindrica) Sabato 9 Maggio 2020 h 14:00 (provvisorio)",
+            "date": "2020-05-09T12:00:00.000Z",
+            "hash": "f9bd61da83c37d6ac15a728e399f7e63caf3b4d492081031c43b6afb116d28b3"
+          },
+          "1ccf09e80d3d38578c417c1e30a68d9bd4c7493a584b143b8e8a2d4d91ec397e": {
+            "name": "Iscrizione / Ritiro Prova Peer-Reviewed 9 Maggio 2020 14:00 (provvisorio)",
+            "date": "2020-05-09T11:00:00.000Z",
+            "hash": "1ccf09e80d3d38578c417c1e30a68d9bd4c7493a584b143b8e8a2d4d91ec397e"
+          },
+          "e91ee0be1389547a30bcfe027679b71c83eae64ce54a1c74fc6e0abaf68474ab": {
+            "name": "Scadenza vostre valutazioni della prova del 06 Maggio Lunedì 11 Maggio 2020 h 14:00",
+            "date": "2020-05-11T12:00:00.000Z",
+            "hash": "e91ee0be1389547a30bcfe027679b71c83eae64ce54a1c74fc6e0abaf68474ab"
+          }
+        },
+        "hash": "133f4651966c7fe9fb99146a0e794ac8161a4a0e4ab8897ddd076e5cb6ca8864"
+      },
+      {
+        "label": "Lezione #33 6 Maggio 2020",
+        "activities": {
+          "20b23549dba945db34d034e4c97b25c6ac47c89fc81ec3edd97c985bfe707eda": {
+            "name": "Lezione Live Correzione Provetta 06 Maggio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=782",
+            "hash": "20b23549dba945db34d034e4c97b25c6ac47c89fc81ec3edd97c985bfe707eda"
+          },
+          "6c895cfe2aecb454a8bed6c1db3b210b7713d6a3082ab88a52854f6e1ffad736": {
+            "name": "Lezione Live 6 Maggio 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1588769851416",
+            "hash": "6c895cfe2aecb454a8bed6c1db3b210b7713d6a3082ab88a52854f6e1ffad736"
+          }
+        },
+        "timers": {},
+        "hash": "9180e5b580797bfaa807f246f36d7e72b2a2f3a7b6d62758db5a4c54fd5c6058"
+      },
+      {
+        "label": "Lezione #32 4 Maggio 2020",
+        "activities": {
+          "b81e7d1dd406b5b6ddc974a8d1b5477d1e2a87eb000dcc4564a4874c346a796d": {
+            "name": "Lezione Live 04 Maggio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=775",
+            "hash": "b81e7d1dd406b5b6ddc974a8d1b5477d1e2a87eb000dcc4564a4874c346a796d"
+          },
+          "b97fb4ded8e43d3da68d41318e14b6140dcb83a6acdb0df8bc47a64255da1c3f": {
+            "name": "Lezione Live 4 Maggio 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1588597554142",
+            "hash": "b97fb4ded8e43d3da68d41318e14b6140dcb83a6acdb0df8bc47a64255da1c3f"
+          },
+          "08b584eca2131fd23c8538b1f275e6b8fa3ef7f6eaa804981275b82866de2988": {
+            "name": "Esercizio #56",
+            "type": "FILE",
+            "hash": "08b584eca2131fd23c8538b1f275e6b8fa3ef7f6eaa804981275b82866de2988"
+          },
+          "0a0547a8712d80dffe908eb8926f4b9d7d97d4c0b1af7585d1884d8bd69fad50": {
+            "name": "Esercizio #57",
+            "type": "FILE",
+            "hash": "0a0547a8712d80dffe908eb8926f4b9d7d97d4c0b1af7585d1884d8bd69fad50"
+          },
+          "aaa6b4a9cabe00820eaf4c3afe01d57ce99a169050b144bb84440c4c0cae8c5d": {
+            "name": "Esercizio #58",
+            "type": "FILE",
+            "hash": "aaa6b4a9cabe00820eaf4c3afe01d57ce99a169050b144bb84440c4c0cae8c5d"
+          },
+          "870de1e33b5dc8ac0b1f8f6f7f02eb9a5ca7f333dfe7efe706ccce8462e1cd08": {
+            "name": "Esercizio #59",
+            "type": "FUN",
+            "hash": "870de1e33b5dc8ac0b1f8f6f7f02eb9a5ca7f333dfe7efe706ccce8462e1cd08"
+          },
+          "159bbdd16e9badde225ad8e383a590c8796ea1d527ec48c2d90e775222914f1a": {
+            "name": "Esercizio #60",
+            "type": "FUN",
+            "hash": "159bbdd16e9badde225ad8e383a590c8796ea1d527ec48c2d90e775222914f1a"
+          }
+        },
+        "timers": {},
+        "hash": "df657e01e9e1ede09302f8f26451eb16a9187250319a7821c5b24d332978ba99"
+      },
+      {
+        "label": "Lezione #31 30 Aprile 2020",
+        "activities": {
+          "8cffed23aeff56deb39a9a8bac27e49cd56df4b3ce7a45c3576f572d1bce2b09": {
+            "name": "Lezione Live 30 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=751",
+            "hash": "8cffed23aeff56deb39a9a8bac27e49cd56df4b3ce7a45c3576f572d1bce2b09"
+          },
+          "8d4faa68d463b72f44fb18c7a4cf1d621302213dfd9a7e03c93a7ae75d4f0f78": {
+            "name": "Lezione Live 30 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1588247666655",
+            "hash": "8d4faa68d463b72f44fb18c7a4cf1d621302213dfd9a7e03c93a7ae75d4f0f78"
+          },
+          "283e8160205ee3c89c02d58f9358b5e87780f011aa6915e2a93aaeac68398e78": {
+            "name": "Condensatori a più di un elettrodo? E. M. Purcell, La fisica di Berkeley, 1986",
+            "type": "WIKI",
+            "link": "https://zenogaburro.com/pluginfile.php/3899/mod_label/intro/multiCondensatori.png",
+            "hash": "283e8160205ee3c89c02d58f9358b5e87780f011aa6915e2a93aaeac68398e78"
+          },
+          "f91c98cee7a0137bf17fd90741ba6f3d39edbd3ed1932cce55eb231d226ce4ed": {
+            "name": "Edward Mills Purcell Premio Nobel Fisica 1952",
+            "type": "WIKI",
+            "link": "https://it.wikipedia.org/wiki/Edward_Mills_Purcell",
+            "hash": "f91c98cee7a0137bf17fd90741ba6f3d39edbd3ed1932cce55eb231d226ce4ed"
+          },
+          "c1c92531f7343e0f673a0d4de5f04a3ee58785369280ac7b0209193872c84401": {
+            "name": "Condensatore%20cilindrico%2002.mp4",
+            "type": "VIDEO",
+            "link": "https://zenogaburro.com/pluginfile.php/3895/mod_label/intro/Condensatore%20cilindrico%2002.mp4",
+            "hash": "c1c92531f7343e0f673a0d4de5f04a3ee58785369280ac7b0209193872c84401"
+          },
+          "eddc1d2ad823f31958d740aa2400e58c09e13ec0b577d494b768ecdeab962e19": {
+            "name": "PDF del video",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/3897/mod_label/intro/condensatoreCilindrico.pdf",
+            "hash": "eddc1d2ad823f31958d740aa2400e58c09e13ec0b577d494b768ecdeab962e19"
+          }
+        },
+        "timers": {},
+        "hash": "a39e31e2f2f0029f1b8214d005ca1aea35356d24fd576e0454db4cba476eba1e"
+      },
+      {
+        "label": "Lezione #30 29 Aprile 2020",
+        "activities": {
+          "7db5fa9617cbc6be34819fbd77841a85302ffd2ee048d7e2b0e02fa2295d4e5b": {
+            "name": "Lezione Live 29 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=752",
+            "hash": "7db5fa9617cbc6be34819fbd77841a85302ffd2ee048d7e2b0e02fa2295d4e5b"
+          },
+          "8077383906b0a9ae9913feebe495af3ad2885e61b4b097ef9fc19d1b2bb5dd57": {
+            "name": "Lezione Live 29 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1588156830887",
+            "hash": "8077383906b0a9ae9913feebe495af3ad2885e61b4b097ef9fc19d1b2bb5dd57"
+          },
+          "1cf8b837b9d5927c50c016af69a907a79e9fd98918a2e5d30bec70a7485e619c": {
+            "name": "Sondaggio: Orario provetta di sabato.",
+            "type": "DATE",
+            "link": "https://zenogaburro.com/mod/choice/view.php?id=736",
+            "hash": "1cf8b837b9d5927c50c016af69a907a79e9fd98918a2e5d30bec70a7485e619c"
+          },
+          "61bf3d99e07239aa9b054db7869c941f2ecc5eadca5b24a4c3e83fac05143ba7": {
+            "name": "Suggerimenti teorici Potenziale Elettrostatico Capitolo 7",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/7-introduction",
+            "hash": "61bf3d99e07239aa9b054db7869c941f2ecc5eadca5b24a4c3e83fac05143ba7"
+          },
+          "1a24270cc2f3eadf7d9400a9886c482930c86e486d10ffa727b071c3baeb4286": {
+            "name": "lavorocentrale.mp4",
+            "type": "VIDEO",
+            "link": "https://zenogaburro.com/pluginfile.php/3881/mod_label/intro/lavorocentrale.mp4",
+            "hash": "1a24270cc2f3eadf7d9400a9886c482930c86e486d10ffa727b071c3baeb4286"
+          },
+          "275af40d57d07514438493cc8dec28510a4058d2ab2b5c8aef2f9dbe071d86e8": {
+            "name": "Introduzione al potenziale elettrostatico (1/3)",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/3902/mod_label/intro/conservativit%C3%A0.pdf",
+            "hash": "275af40d57d07514438493cc8dec28510a4058d2ab2b5c8aef2f9dbe071d86e8"
+          },
+          "76e105beea4594ae2ea96c21fe601b0bee2cdc5f271d43e5e8965d16dec3f843": {
+            "name": "circuitazioneNulla.mp4",
+            "type": "VIDEO",
+            "link": "https://zenogaburro.com/pluginfile.php/3888/mod_label/intro/circuitazioneNulla.mp4",
+            "hash": "76e105beea4594ae2ea96c21fe601b0bee2cdc5f271d43e5e8965d16dec3f843"
+          },
+          "df897238a74f1188257bb0d60d886a382ae5f8f4770f2390d8af374ad98a0178": {
+            "name": "Introduzione al potenziale elettrostatico (2/3)",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/3903/mod_label/intro/circuitazione.pdf",
+            "hash": "df897238a74f1188257bb0d60d886a382ae5f8f4770f2390d8af374ad98a0178"
+          },
+          "229dae6474b01ab1e6f050450a5cecc8124605d0aa38672174eb8291ec9a01f2": {
+            "name": "PotenzialeElettrostatico.mp4",
+            "type": "VIDEO",
+            "link": "https://zenogaburro.com/pluginfile.php/3889/mod_label/intro/PotenzialeElettrostatico.mp4",
+            "hash": "229dae6474b01ab1e6f050450a5cecc8124605d0aa38672174eb8291ec9a01f2"
+          },
+          "6e0a85f0a5eb319f3279214aa833d3de0fd39da7c4b6338a6354b54b4d2e7d07": {
+            "name": "Introduzione al potenziale elettrostatico (3/3)",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/3901/mod_label/intro/potenziale.pdf",
+            "hash": "6e0a85f0a5eb319f3279214aa833d3de0fd39da7c4b6338a6354b54b4d2e7d07"
+          }
+        },
+        "timers": {},
+        "hash": "ce7d7812da23ed5093cebda3432dad3865f48acaf328704304db137e81632ef8"
+      },
+      {
+        "label": "Lezione #29 27 Aprile 2020",
+        "activities": {
+          "b6f40acdab0ac798e2d4a760ff0055621eb42ba6cb97d87688c7e99c1e787643": {
+            "name": "Lezione Live 27 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=757",
+            "hash": "b6f40acdab0ac798e2d4a760ff0055621eb42ba6cb97d87688c7e99c1e787643"
+          },
+          "06571d5acca66aa61d80cdfbc4a91fa62f8c9f8d5d87941730b17d43eb6cb74a": {
+            "name": "Lezione Live 27 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1587991131208",
+            "hash": "06571d5acca66aa61d80cdfbc4a91fa62f8c9f8d5d87941730b17d43eb6cb74a"
+          },
+          "b5ac9e45aba469c31748857caca9f079532c44efc32a738d00e3c79a879453f3": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/joG3BxwPDys?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=1",
+            "hash": "b5ac9e45aba469c31748857caca9f079532c44efc32a738d00e3c79a879453f3"
+          },
+          "e8a8b4656dc152d6c129f93b794743498104ac613c8aa9d61b7b19fd226c3108": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/llQcq9rD960?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=2",
+            "hash": "e8a8b4656dc152d6c129f93b794743498104ac613c8aa9d61b7b19fd226c3108"
+          },
+          "1e4de1c1e98de5f96f8c2de6ced5cd9fabcfb255aa293a8c3107e4d78e80bb52": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/In6wGqSHqiY?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=3",
+            "hash": "1e4de1c1e98de5f96f8c2de6ced5cd9fabcfb255aa293a8c3107e4d78e80bb52"
+          },
+          "8462f58d58beab57b0d7b79bcc8dac659464c68d8c03c4aeeac1ac080fdff47c": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/JTIJSs8AZfw?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=4",
+            "hash": "8462f58d58beab57b0d7b79bcc8dac659464c68d8c03c4aeeac1ac080fdff47c"
+          },
+          "7cb7ac457e836a8a2b874afb6af84bfea4b9fb461b7a72c357a15e1949628417": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/cP_khJ1BGR0?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=5",
+            "hash": "7cb7ac457e836a8a2b874afb6af84bfea4b9fb461b7a72c357a15e1949628417"
+          }
+        },
+        "timers": {},
+        "hash": "0e526f367dd58ae69f06937f1f82687e48ead1986373e02e6f282c4e505b73b4"
+      },
+      {
+        "label": "Lezione #28 23 Aprile 2020",
+        "activities": {
+          "88e64b3768bbbe9d3b858e0c4c22c84bf86f7e0c8a6c737e0870a66f56139fd0": {
+            "name": "Lezione Live 23 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=713",
+            "hash": "88e64b3768bbbe9d3b858e0c4c22c84bf86f7e0c8a6c737e0870a66f56139fd0"
+          },
+          "3ea9524579266345b9f215307747fb0c9bed7d44f41b39c7c5bd33475b9f1d0d": {
+            "name": "Lezione Live 23 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1587642793914",
+            "hash": "3ea9524579266345b9f215307747fb0c9bed7d44f41b39c7c5bd33475b9f1d0d"
+          },
+          "52247314a3b0b0df281b2e461816b442c2aeb3c265546ad7ecdaa3385cf02ece": {
+            "name": "Metalli in elettrostatica",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium",
+            "hash": "52247314a3b0b0df281b2e461816b442c2aeb3c265546ad7ecdaa3385cf02ece"
+          },
+          "e763df0c9e4c9e73e50b89052a6cb43e3479fefbee9ca28492bbc7cd5a8c20c8": {
+            "name": "Esercizio #50: vedi \"Example 7.1\"",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/7-1-electric-potential-energy#fs-id1167586180081",
+            "hash": "e763df0c9e4c9e73e50b89052a6cb43e3479fefbee9ca28492bbc7cd5a8c20c8"
+          },
+          "f2b23979543e85b2da6b2bbd8a13b062f601518c981b35cf04eac9d1e6e8120c": {
+            "name": "Esercizio #50",
+            "type": "FILE",
+            "hash": "f2b23979543e85b2da6b2bbd8a13b062f601518c981b35cf04eac9d1e6e8120c"
+          },
+          "21f81627757ed83e0d3bfc795d80b56eb05b65c524703727f7e6d3dd2e6b29b4": {
+            "name": "Esercizio #51:",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium#fs-id1172098284874",
+            "hash": "21f81627757ed83e0d3bfc795d80b56eb05b65c524703727f7e6d3dd2e6b29b4"
+          },
+          "9dfeecef723be1ab33300b0b64d616760217e385e6585dbf7a571af512e5f341": {
+            "name": "Esercizio #51",
+            "type": "FILE",
+            "hash": "9dfeecef723be1ab33300b0b64d616760217e385e6585dbf7a571af512e5f341"
+          },
+          "d427f23ebb45365e8c57e43f95a36a685303ae3a75fe8ecb29d95266fac35ad5": {
+            "name": "Esercizio #52: Teoria generale",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium#fs-id1172096157782",
+            "hash": "d427f23ebb45365e8c57e43f95a36a685303ae3a75fe8ecb29d95266fac35ad5"
+          },
+          "99d81a3060afa9cf77a1a3aac93e6b18278d5a38a50bd76313d7322f504fb5df": {
+            "name": "Esercizio #52: vedi \"Example 6.10\"",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium#fs-id1172098703893",
+            "hash": "99d81a3060afa9cf77a1a3aac93e6b18278d5a38a50bd76313d7322f504fb5df"
+          },
+          "4781202898118bb8033ca5ea2e1cbed4589f16aaea4d83e482daa028a03d5788": {
+            "name": "Esercizio #52",
+            "type": "FILE",
+            "hash": "4781202898118bb8033ca5ea2e1cbed4589f16aaea4d83e482daa028a03d5788"
+          },
+          "ff055bc8f00efc6e89306bab7848f26a58e3f8b512707a9a1be2d991995bff96": {
+            "name": "Esercizio #53: vedi \"Example 6.6\"",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-3-applying-gausss-law#fs-id1172099892044",
+            "hash": "ff055bc8f00efc6e89306bab7848f26a58e3f8b512707a9a1be2d991995bff96"
+          },
+          "3b25e5847cf026641ae1a52f5f4ba70c1647b826cc6b365b5e3bddcebb0f58fd": {
+            "name": "Esercizio #53",
+            "type": "FILE",
+            "hash": "3b25e5847cf026641ae1a52f5f4ba70c1647b826cc6b365b5e3bddcebb0f58fd"
+          },
+          "45344236840cb2a49a6b5e7709c83d029856ac8a6593202973488b1a1d544866": {
+            "name": "Esercizio #54: vedi \"Example 6.11\"",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/6-4-conductors-in-electrostatic-equilibrium#fs-id1172096037218",
+            "hash": "45344236840cb2a49a6b5e7709c83d029856ac8a6593202973488b1a1d544866"
+          },
+          "f9f5da729308503c601a90fd6e13311aad0f0d021dbd26cb23b7ad43a923de94": {
+            "name": "Esercizio #54",
+            "type": "FILE",
+            "hash": "f9f5da729308503c601a90fd6e13311aad0f0d021dbd26cb23b7ad43a923de94"
+          },
+          "3325a043f8f3adf5649065072c0101aa430f68a3b081b5742ac3366596b25eb6": {
+            "name": "Esercizio #55: vedi \"Example 7.1\"",
+            "type": "WIKI",
+            "link": "https://openstax.org/books/university-physics-volume-2/pages/7-1-electric-potential-energy#fs-id1167586180081",
+            "hash": "3325a043f8f3adf5649065072c0101aa430f68a3b081b5742ac3366596b25eb6"
+          },
+          "2b13948d0af906db16951890d4d8718120ce5dd5f5fbe2330234494d0e452290": {
+            "name": "Esercizio #55",
+            "type": "FILE",
+            "hash": "2b13948d0af906db16951890d4d8718120ce5dd5f5fbe2330234494d0e452290"
+          }
+        },
+        "timers": {},
+        "hash": "854b6fe44335646aae57edc681271720b8afc54654875d9a9105a659de9d6c53"
+      },
+      {
+        "label": "Lezione #27 22 Aprile 2020",
+        "activities": {
+          "abcb3bc382e9e080df2f8462d7ffcd72aa82a20eef76b05cfdb6c73b858c8294": {
+            "name": "Lezione Live 22 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=703",
+            "hash": "abcb3bc382e9e080df2f8462d7ffcd72aa82a20eef76b05cfdb6c73b858c8294"
+          },
+          "0031dfed717e1bb264a8a6dfdcadfc3ca5c7cdf9f96e4a8ad836f01f44e93edd": {
+            "name": "Lezione Live 22 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1587559735800",
+            "hash": "0031dfed717e1bb264a8a6dfdcadfc3ca5c7cdf9f96e4a8ad836f01f44e93edd"
+          }
+        },
+        "timers": {},
+        "hash": "d07b5d0e7567a0a4ba8d484715d4ff65e71c490d11b1dd193d848c3ae57c1edf"
+      },
+      {
+        "label": "Lezione #26 20 Aprile 2020",
+        "activities": {
+          "99c75fb977e5221df07014999569eae9e5d49cca37cd5fa00aac1311b4121fc4": {
+            "name": "Lezione Live 20 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=687",
+            "hash": "99c75fb977e5221df07014999569eae9e5d49cca37cd5fa00aac1311b4121fc4"
+          },
+          "2d72a89e5809da2b2d40ba1f2c4162b97c850fcf8b331c655146c3266a35970f": {
+            "name": "Lezione Live 20 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1587389184844",
+            "hash": "2d72a89e5809da2b2d40ba1f2c4162b97c850fcf8b331c655146c3266a35970f"
+          },
+          "1f470cf1498c81117723f83488aaaaf353ff058df3edef553fa29edbda354a28": {
+            "name": "Cool website Gauss law",
+            "type": "URL",
+            "link": "https://phys.libretexts.org/Bookshelves/University_Physics/Book%3A_University_Physics_(OpenStax)/Map%3A_University_Physics_II_-_Thermodynamics%2C_Electricity%2C_and_Magnetism_(OpenStax)/06%3A_Gauss's_Law",
+            "hash": "1f470cf1498c81117723f83488aaaaf353ff058df3edef553fa29edbda354a28"
+          },
+          "237d99f455fd079e2c0f4e324fc94c43ed15f11e1096a24434c7b7ccf9686cbe": {
+            "name": "Tutorato #7 21 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=690",
+            "hash": "237d99f455fd079e2c0f4e324fc94c43ed15f11e1096a24434c7b7ccf9686cbe"
+          },
+          "5df289fed6f740ce578b4bc0a0df504502d9353ff8ccf56e21f186b34bfa1901": {
+            "name": "Esercizio #46",
+            "type": "FILE",
+            "hash": "5df289fed6f740ce578b4bc0a0df504502d9353ff8ccf56e21f186b34bfa1901"
+          },
+          "bc9fd5539aa5e480d6c45c863ceb75c3b495b1bb3e0025372edc1a98ce126094": {
+            "name": "Esercizio #47",
+            "type": "FILE",
+            "hash": "bc9fd5539aa5e480d6c45c863ceb75c3b495b1bb3e0025372edc1a98ce126094"
+          },
+          "498f2aaec92c768f0c2bd508af3b6087705e40b13304bd275099494cdaa6cd40": {
+            "name": "Esercizio #48",
+            "type": "FILE",
+            "hash": "498f2aaec92c768f0c2bd508af3b6087705e40b13304bd275099494cdaa6cd40"
+          },
+          "31469b29554956def5e7b7f05f61d2e213d6d41f0878a434b35f472bd720738d": {
+            "name": "Esercizio #49",
+            "type": "FILE",
+            "hash": "31469b29554956def5e7b7f05f61d2e213d6d41f0878a434b35f472bd720738d"
+          }
+        },
+        "timers": {},
+        "hash": "c9ec4abaaaa09f1acf78dc5efdc1a5af6f2814de7a2c7df0286369bd4406ecdc"
+      },
+      {
+        "label": "Lezione #25 16 Aprile 2020",
+        "activities": {
+          "7564ee6374cd1b62f62c8db2b5f797721ad0b8a50658d3c95d090708ef26313d": {
+            "name": "Lezione Live 16 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=674",
+            "hash": "7564ee6374cd1b62f62c8db2b5f797721ad0b8a50658d3c95d090708ef26313d"
+          },
+          "bf22c6b3dd33a77d483c0aa58460e41f9b9b0098f78a8cc1830e768097bba187": {
+            "name": "Lezione Live 16 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1587038007102",
+            "hash": "bf22c6b3dd33a77d483c0aa58460e41f9b9b0098f78a8cc1830e768097bba187"
+          },
+          "70d25366134172841fb674a94c3fecf79056d5a97c58bd18a9e6410e437c8647": {
+            "name": "Esercizio #40",
+            "type": "FUN",
+            "hash": "70d25366134172841fb674a94c3fecf79056d5a97c58bd18a9e6410e437c8647"
+          },
+          "49c67334d1c68b2a0d8c577f36244c61a8b8f8feadba25dc54fe011742629073": {
+            "name": "Esercizio #41",
+            "type": "FILE",
+            "hash": "49c67334d1c68b2a0d8c577f36244c61a8b8f8feadba25dc54fe011742629073"
+          },
+          "ddeb9cd411f5018639c1fa54d408b9e6283f1569623879b552902b6042068542": {
+            "name": "Esercizio #42",
+            "type": "FILE",
+            "hash": "ddeb9cd411f5018639c1fa54d408b9e6283f1569623879b552902b6042068542"
+          },
+          "3af7a586cdc5a38584caced1c9870e77c1590b84ff2d3291d30d1932ad6602a0": {
+            "name": "Esercizio #43",
+            "type": "FILE",
+            "hash": "3af7a586cdc5a38584caced1c9870e77c1590b84ff2d3291d30d1932ad6602a0"
+          },
+          "84bb3d289c3a70b36a09ac12147df937c10a8e865775ab71cf431646beaf03a7": {
+            "name": "Esercizio #44",
+            "type": "FILE",
+            "hash": "84bb3d289c3a70b36a09ac12147df937c10a8e865775ab71cf431646beaf03a7"
+          },
+          "a73e26dafe1a75cd44df25d37668f684d53b4cc0ed4805bb278dcbe4cc7a6707": {
+            "name": "Esercizio #45",
+            "type": "FILE",
+            "hash": "a73e26dafe1a75cd44df25d37668f684d53b4cc0ed4805bb278dcbe4cc7a6707"
+          }
+        },
+        "timers": {},
+        "hash": "37315b79134edebabb5823cb77e072aeed6dcb1eb5f04bbc5bfbec1d54682715"
+      },
+      {
+        "label": "Lezione #24 15 Aprile 2020",
+        "activities": {
+          "6da55da08e9f8f1547537d402a20bdeec09c56b3967a28c7e2bd6f6d21f7c7a2": {
+            "name": "Lezione Live 15 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=665",
+            "hash": "6da55da08e9f8f1547537d402a20bdeec09c56b3967a28c7e2bd6f6d21f7c7a2"
+          },
+          "07439f816f0c6daa042a78ddc0dec3c555594582dca3729e42950fa213ef1555": {
+            "name": "Lezione Live 15 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1586945881593",
+            "hash": "07439f816f0c6daa042a78ddc0dec3c555594582dca3729e42950fa213ef1555"
+          },
+          "80443decac0828cc7dcd8a707726120c2581cc6a476a9eed8b2aa5baaab3d382": {
+            "name": "Esercizio #35",
+            "type": "FILE",
+            "hash": "80443decac0828cc7dcd8a707726120c2581cc6a476a9eed8b2aa5baaab3d382"
+          },
+          "c2f8a7b086a869f2133480b1cbe8d3450fcd4473de5b9fd43dc43f693ce14bde": {
+            "name": "Esercizio #36",
+            "type": "FILE",
+            "hash": "c2f8a7b086a869f2133480b1cbe8d3450fcd4473de5b9fd43dc43f693ce14bde"
+          },
+          "2b7a7cbdf2bc67088b0901980d1fa66693bc3f20586e78a561636eae7a89a1c4": {
+            "name": "Esercizio #37",
+            "type": "FILE",
+            "hash": "2b7a7cbdf2bc67088b0901980d1fa66693bc3f20586e78a561636eae7a89a1c4"
+          },
+          "2086626dc5974a54d7839bd4f32c3efe3fa786cdc7e7f7058d5f099b3f33e2ae": {
+            "name": "Esercizio #38",
+            "type": "FILE",
+            "hash": "2086626dc5974a54d7839bd4f32c3efe3fa786cdc7e7f7058d5f099b3f33e2ae"
+          },
+          "2e5d54131d299e98135a1e20787925af0657d4ceb6a87be255ca6cced7699a3c": {
+            "name": "Esercizio #39",
+            "type": "FUN",
+            "hash": "2e5d54131d299e98135a1e20787925af0657d4ceb6a87be255ca6cced7699a3c"
+          }
+        },
+        "timers": {},
+        "hash": "59750f2765059f40f74ef3a66b3ba863b756d0ce8441c87719be4e3bf6d0b66d"
+      },
+      {
+        "label": "Lezione #23 8 Aprile 2020",
+        "activities": {
+          "6064268e5f876b04e7f5376fd59928f63ae49e673678e3e7a607260f0994ade1": {
+            "name": "Provetta 8 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=655",
+            "hash": "6064268e5f876b04e7f5376fd59928f63ae49e673678e3e7a607260f0994ade1"
+          },
+          "ad5f6a31b75c510f82163b240123cb66f397919710c9611e038ffa72e7a7be4a": {
+            "name": "Lezione Live 8 Aprile 2020 Correzione Provetta",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1586350380072",
+            "hash": "ad5f6a31b75c510f82163b240123cb66f397919710c9611e038ffa72e7a7be4a"
+          }
+        },
+        "timers": {},
+        "hash": "ba5d79583ef5c8ef4279b97e821c887b471e24e696d55db72a1725f71c39a2cb"
+      },
+      {
+        "label": "Lezione #22 6 Aprile 2020",
+        "activities": {
+          "50897a0322ef7bf09d356ee0ae0613a117e7f6b8334a6792d3d53deb652a7e9f": {
+            "name": "Lezione Live 6 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=643",
+            "hash": "50897a0322ef7bf09d356ee0ae0613a117e7f6b8334a6792d3d53deb652a7e9f"
+          },
+          "a988d6e8bf83c8a0871aa7a264b5b6d785203b6622fbc5d6836f895218f3743a": {
+            "name": "Lezione Live 6 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1586178807428",
+            "hash": "a988d6e8bf83c8a0871aa7a264b5b6d785203b6622fbc5d6836f895218f3743a"
+          },
+          "41b99ab404918fd974e1d36788b5f12e751d50b11a39fa2bc932b78f055b4aa6": {
+            "name": "Esercizio #31 [con soluzione]",
+            "type": "FILE",
+            "hash": "41b99ab404918fd974e1d36788b5f12e751d50b11a39fa2bc932b78f055b4aa6"
+          },
+          "a6553961eb33deb59457be983f03f1378455d4e457cb2d97f9b6499c5f0c9bb9": {
+            "name": "Youtube Video",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/embed/2YJ0x-XhUU4?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=en&enablejsapi=1&origin=https%3A%2F%2Fzenogaburro.com&widgetid=6",
+            "hash": "a6553961eb33deb59457be983f03f1378455d4e457cb2d97f9b6499c5f0c9bb9"
+          },
+          "57418f839ed15ab343450968ad61a3bc721494f884790f57276c1e40e8a8ddcc": {
+            "name": "Esercizio #32 [con soluzione]",
+            "type": "FILE",
+            "hash": "57418f839ed15ab343450968ad61a3bc721494f884790f57276c1e40e8a8ddcc"
+          },
+          "2bad0b556af55599da54a8247232ab8ec53e995e9787f67a2dce0dd1ecf643ca": {
+            "name": "Esercizio #33 [con soluzione]",
+            "type": "FILE",
+            "hash": "2bad0b556af55599da54a8247232ab8ec53e995e9787f67a2dce0dd1ecf643ca"
+          },
+          "cd754c4bd68dd31b3b227267e7dbc589518a8d973f0992cfe05cba1332403532": {
+            "name": "Esercizio #34 [con soluzione]",
+            "type": "FILE",
+            "hash": "cd754c4bd68dd31b3b227267e7dbc589518a8d973f0992cfe05cba1332403532"
+          }
+        },
+        "timers": {},
+        "hash": "1caf514e2f3968f39a9d007914d75163978683d95baaa7f1df44c8bf124a5012"
+      },
+      {
+        "label": "Lezione #21 2 Aprile 2020",
+        "activities": {
+          "fb14cef9513187a485064ba530748ce62be4df95f8907f0d5042294540a06b40": {
+            "name": "Lezione Live 2 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=631",
+            "hash": "fb14cef9513187a485064ba530748ce62be4df95f8907f0d5042294540a06b40"
+          },
+          "36cd6611ea73f220d2f42fd4915d61814b34e4368252f8d42fc167edb36ffb4b": {
+            "name": "Lezione Live 2 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1585827789099",
+            "hash": "36cd6611ea73f220d2f42fd4915d61814b34e4368252f8d42fc167edb36ffb4b"
+          },
+          "85d5def26340ef70413b2652306f29c802670b1cdaba15d4eb3677e004a47732": {
+            "name": "Esercizi momento angolare Università di Udine",
+            "type": "FILE",
+            "link": "http://www.fisica.uniud.it/~pauletta/corso/esercizi/rotolamento_e_mom_ang_risolti.pdf",
+            "hash": "85d5def26340ef70413b2652306f29c802670b1cdaba15d4eb3677e004a47732"
+          },
+          "59e305d2aeb5b77e63384f9239ef1c83488ec90ec04871b994f997dc225764da": {
+            "name": "Perché andare lontano? Esame Prof. Dalfovo UniTn, Dip Fisica :)",
+            "type": "FILE",
+            "link": "http://www.science.unitn.it/~dalfovo/lezioni/2013-14/esame-030214.pdf",
+            "hash": "59e305d2aeb5b77e63384f9239ef1c83488ec90ec04871b994f997dc225764da"
+          },
+          "ef8aa50bc52eac74324130cc0b1850a698fbf76a53da7b28345e6fd76c584f84": {
+            "name": "Spiegazione momento angolare e d'inerzia con esercizi, Amaldi, livello: superiori.... va bene per iniziare, se uno si perde con le mie lezioni :)",
+            "type": "FILE",
+            "link": "https://online.scuola.zanichelli.it/amaldi-files/Cap_12/MomentoAngolare_Cap12_Par12_Amaldi.pdf",
+            "hash": "ef8aa50bc52eac74324130cc0b1850a698fbf76a53da7b28345e6fd76c584f84"
+          }
+        },
+        "timers": {},
+        "hash": "d421d2f7ef129ca3638a20008bda8d1f28bcf40dae614fbf9d7dc6ec958b3f57"
+      },
+      {
+        "label": "Lezione #20 1 Aprile 2020",
+        "activities": {
+          "ad757c29aa7b858d85e7dbb3a1f7b01bfe387be4e927da36b0040e36705c75cf": {
+            "name": "Lezione Live 1 Aprile 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=632",
+            "hash": "ad757c29aa7b858d85e7dbb3a1f7b01bfe387be4e927da36b0040e36705c75cf"
+          },
+          "8b46ef012197e380ccf2659abbcc8f6eff680e261b71173d4de6a3d535e829d2": {
+            "name": "Lezione Live 1 Aprile 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1585736749120",
+            "hash": "8b46ef012197e380ccf2659abbcc8f6eff680e261b71173d4de6a3d535e829d2"
+          }
+        },
+        "timers": {},
+        "hash": "fc571c8b2a95921f43b2999fce42a907fa34ec2482c2affe6aa3bd9b12ee10fa"
+      },
+      {
+        "label": "Lezione #19 30 Marzo 2020",
+        "activities": {
+          "48662e2d5eddafc3b2433889f74e9211f65f9b3701967f13947775ba0b9cf6fd": {
+            "name": "Lezione Live 30 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=625",
+            "hash": "48662e2d5eddafc3b2433889f74e9211f65f9b3701967f13947775ba0b9cf6fd"
+          },
+          "bef8623c0def5f1b2c79a6fc88ed607122a8a77d282be39b1b72a0df30170e3c": {
+            "name": "Lezione Live 30 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1585575135935",
+            "hash": "bef8623c0def5f1b2c79a6fc88ed607122a8a77d282be39b1b72a0df30170e3c"
+          },
+          "03a2744587f51b310fc2fad721a014963b2db512b5b354f0667e4b50f80ae870": {
+            "name": "Esercizi dei Tutors 31 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=628",
+            "hash": "03a2744587f51b310fc2fad721a014963b2db512b5b354f0667e4b50f80ae870"
+          }
+        },
+        "timers": {},
+        "hash": "fb94f7faa4656c802295533e3049d91a7575c23d9708c9d3cf2fc8a26c4dc732"
+      },
+      {
+        "label": "Lezione #18 27 Marzo 2020 (non \"live\")",
+        "activities": {
+          "20000858b851aff8243fa20f5b69aaeb3641b8a27695177a8f2501af3bbef8b8": {
+            "name": "Soluzione Esercizio #19",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/watch?v=OCm6WWnDj6I",
+            "hash": "20000858b851aff8243fa20f5b69aaeb3641b8a27695177a8f2501af3bbef8b8"
+          },
+          "cd9ba5fbca1e19540d4e80ea149a6793c8c36e57af277513abef05724d3ec1a5": {
+            "name": "Conservazione del momento angolare: bilanciere simmetrico",
+            "type": "VIDEO",
+            "link": "https://youtu.be/40HUmHM1IF0",
+            "hash": "cd9ba5fbca1e19540d4e80ea149a6793c8c36e57af277513abef05724d3ec1a5"
+          },
+          "3b33028bd41ac85717f52799cb1d1efb4c973252af0653b3f93e6bbec292ab1a": {
+            "name": "Conservazione del momento angolare: Esercizio #29",
+            "type": "VIDEO",
+            "link": "https://youtu.be/WlJU2nIxpsQ",
+            "hash": "3b33028bd41ac85717f52799cb1d1efb4c973252af0653b3f93e6bbec292ab1a"
+          }
+        },
+        "timers": {},
+        "hash": "b0a17afcf0310b2c2dfa3710f759b48168b431fef7e1b202eec68a9b5e1a60a9"
+      },
+      {
+        "label": "Lezione #17 26 Marzo 2020",
+        "activities": {
+          "a8e4895c241660cdd9babab7098835b36ce407a62b2f24d714f74599187d66c9": {
+            "name": "Lezione Live 26 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=611",
+            "hash": "a8e4895c241660cdd9babab7098835b36ce407a62b2f24d714f74599187d66c9"
+          },
+          "46142fe6f1271e6f64fd53fdcf3be15f52a8a18e9e2f618f89e370466e4e6b88": {
+            "name": "Lezione Live 26 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1585227358661",
+            "hash": "46142fe6f1271e6f64fd53fdcf3be15f52a8a18e9e2f618f89e370466e4e6b88"
+          },
+          "5dcfc9525bccfa8d79c8b766575276f0d256e7e3db7e2d948f5ecf4b25e5f0e1": {
+            "name": "Equazioni cardinali di Eulero per i sistemi meccanici",
+            "type": "WIKI",
+            "link": "https://it.wikipedia.org/wiki/Equazioni_di_Eulero_(dinamica)",
+            "hash": "5dcfc9525bccfa8d79c8b766575276f0d256e7e3db7e2d948f5ecf4b25e5f0e1"
+          },
+          "2f77abf7a5824c0b1cf2745aac5b7047bd53114e77e1f1dd80e2d9fc4ed50ef6": {
+            "name": "Esercizio #28, #29, #30 [con soluzione]",
+            "type": "FILE",
+            "hash": "2f77abf7a5824c0b1cf2745aac5b7047bd53114e77e1f1dd80e2d9fc4ed50ef6"
+          },
+          "69cd55bf13afc542e0575ee2ba71f73289f1d0f44b6a17c1c4a93e66464bc13b": {
+            "name": "Daniel Pink Drive",
+            "type": "VIDEO",
+            "link": "https://www.youtube.com/watch?v=u6XAPnuFjJc",
+            "hash": "69cd55bf13afc542e0575ee2ba71f73289f1d0f44b6a17c1c4a93e66464bc13b"
+          },
+          "8f1c27afb6f4f488fad05e9d78775dea403ffdf1d142fafe3b74239d0f2c11f8": {
+            "name": "R. Kipling If",
+            "type": "FUN",
+            "link": "https://www.poetryfoundation.org/poems/46473/if---",
+            "hash": "8f1c27afb6f4f488fad05e9d78775dea403ffdf1d142fafe3b74239d0f2c11f8"
+          }
+        },
+        "timers": {},
+        "hash": "a29906ce89e9ed46f2d1b909b1752b3d07b795c819f4dfb818f3ee51caa15aa6"
+      },
+      {
+        "label": "Lezione #16 25 Marzo 2020",
+        "activities": {
+          "fc761397dff183c5d90deca084dec77048d77db65308efdfeb24c3b7dc7440be": {
+            "name": "Lezione Live 25 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=607",
+            "hash": "fc761397dff183c5d90deca084dec77048d77db65308efdfeb24c3b7dc7440be"
+          },
+          "a929af36232fe0804d5cc5c70e5375f5b93350433cb89122e620fba67754b707": {
+            "name": "Lezione Live 25 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1585143164415",
+            "hash": "a929af36232fe0804d5cc5c70e5375f5b93350433cb89122e620fba67754b707"
+          },
+          "467a2e35c6698bad4082f3acbf76f50f57de7584f8edc9d9c4ab54ed78537611": {
+            "name": "video.mp4",
+            "type": "VIDEO",
+            "link": "https://zenogaburro.com/pluginfile.php/3686/mod_label/intro/WhatsApp%20Audio%202020-03-26%20at%2008.38.13.mp4",
+            "hash": "467a2e35c6698bad4082f3acbf76f50f57de7584f8edc9d9c4ab54ed78537611"
+          }
+        },
+        "timers": {},
+        "hash": "00f5ff08eaec7dbcb5d01aa06de9b02e2305071004e195492a2b64239a295e8d"
+      },
+      {
+        "label": "Lezione #15 23 Marzo 2020",
+        "activities": {
+          "6c89d5ed66673ae344f97155d569e42bd69cebdd4f9c73205c443da09b4c1516": {
+            "name": "Lezione Live 23 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=582",
+            "hash": "6c89d5ed66673ae344f97155d569e42bd69cebdd4f9c73205c443da09b4c1516"
+          },
+          "4c9095ff5fe025e0ea22369766520a35a5e0aab9fb46a1ae831c2aa3ee253174": {
+            "name": "Lezione Live 23 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1584973104850",
+            "hash": "4c9095ff5fe025e0ea22369766520a35a5e0aab9fb46a1ae831c2aa3ee253174"
+          },
+          "1773b44782e2733f563bde21a0ae43f1d84c89e487b746ebd0be1e643ea7720e": {
+            "name": "Esercizio #25, #26, #27 [con soluzione]",
+            "type": "FILE",
+            "hash": "1773b44782e2733f563bde21a0ae43f1d84c89e487b746ebd0be1e643ea7720e"
+          },
+          "30edc4501b408a99e14e40d39081f0bca06e3ba20af0ec739a14effb7a3ede27": {
+            "name": "Soluzione #24",
+            "type": "FILE",
+            "hash": "30edc4501b408a99e14e40d39081f0bca06e3ba20af0ec739a14effb7a3ede27"
+          },
+          "599b8c52a4fa4ccedf835e2731306c181d67b531485fcd0b08c4a682368fc158": {
+            "name": "Esercizi dei Tutors 24 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=597",
+            "hash": "599b8c52a4fa4ccedf835e2731306c181d67b531485fcd0b08c4a682368fc158"
+          }
+        },
+        "timers": {},
+        "hash": "06ba8b521bd3dd3d585b9635276a1732db66a256777ad2a0754d6c69afc5668c"
+      },
+      {
+        "label": "Lezione #14 19 Marzo 2020",
+        "activities": {
+          "7a5dfb732c15efbeeffa738fd69ffd3673c2d25f496d54558780e350ddbeeded": {
+            "name": "Lezione Live 19 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=580",
+            "hash": "7a5dfb732c15efbeeffa738fd69ffd3673c2d25f496d54558780e350ddbeeded"
+          },
+          "223b073dc92bfb2f7de448ab0a0151ed7ac393bc1d41ec8ea2bbc2ae9a43bddb": {
+            "name": "Lezione Live 19 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1584621819541",
+            "hash": "223b073dc92bfb2f7de448ab0a0151ed7ac393bc1d41ec8ea2bbc2ae9a43bddb"
+          },
+          "8f223f4ca93b02943aed61cb27f72d9ded828367c79a242cea19dfe499b02a61": {
+            "name": "Esercizio #23 [con soluzione]",
+            "type": "FILE",
+            "hash": "8f223f4ca93b02943aed61cb27f72d9ded828367c79a242cea19dfe499b02a61"
+          },
+          "1e57cebe0acd7574d78fbff15fa0feb6b32c244d48ccac8cebcd9f37f4353b17": {
+            "name": "Esercizio #24 [soluzione tra pochi gg]",
+            "type": "FILE",
+            "hash": "1e57cebe0acd7574d78fbff15fa0feb6b32c244d48ccac8cebcd9f37f4353b17"
+          }
+        },
+        "timers": {},
+        "hash": "d1507fbf11f7b3d102af8e3cb02219a10a21f899ea9946e600d1b399e827eba2"
+      },
+      {
+        "label": "Lezione #13 18 Marzo 2020",
+        "activities": {
+          "09ad1a3f6677c773cd6979ae697409e3b9d99db051937483b7710c947d272528": {
+            "name": "Lezione Live 18 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=581",
+            "hash": "09ad1a3f6677c773cd6979ae697409e3b9d99db051937483b7710c947d272528"
+          },
+          "1d089d27f94df5cba3a17def49a357d68cd74af1de2e6462f6c5c533dbdefd4a": {
+            "name": "Lezione Live 18 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1584537044001",
+            "hash": "1d089d27f94df5cba3a17def49a357d68cd74af1de2e6462f6c5c533dbdefd4a"
+          }
+        },
+        "timers": {},
+        "hash": "4daac6df5dc3c24aa32b85694befb396cf2ee2396e7e03f42cf61a017710eb61"
+      },
+      {
+        "label": "Lezione #12 16 Marzo 2020",
+        "activities": {
+          "b78f15ce9b153f98deb0643c2f797f302a25e544ae58e31d1d47f4fea8ccb216": {
+            "name": "Lezione Live 16 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=559",
+            "hash": "b78f15ce9b153f98deb0643c2f797f302a25e544ae58e31d1d47f4fea8ccb216"
+          },
+          "43d25214d8ca46b3c8858577434f847c05aacf59ff2cf7047266e510e1eef973": {
+            "name": "Lezione Live Risincronizzata 16 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=570",
+            "hash": "43d25214d8ca46b3c8858577434f847c05aacf59ff2cf7047266e510e1eef973"
+          },
+          "e4940987b738f4f47f38fbbc9e05b543c95c2fa9d6aac23e408ddfcd198f3e5a": {
+            "name": "Esercizi dei Tutors 17 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=563",
+            "hash": "e4940987b738f4f47f38fbbc9e05b543c95c2fa9d6aac23e408ddfcd198f3e5a"
+          },
+          "b164bb4bec2af89a5027551800198c9fd0714b2ad584ef9566e474ee95f6bcaf": {
+            "name": "Esercizi #20, #21, #22 (con risposta)",
+            "type": "FILE",
+            "hash": "b164bb4bec2af89a5027551800198c9fd0714b2ad584ef9566e474ee95f6bcaf"
+          }
+        },
+        "timers": {},
+        "hash": "6de9d4556ad976f0051da513ee383b1b83646fae410ba9d640b2c0fed7567967"
+      },
+      {
+        "label": "Lezione#11 13 Marzo  2020",
+        "activities": {
+          "6574b17b4e0fe860dbf5866fac12c2a9ade769ae8389294b0fa5f734062c9b43": {
+            "name": "Agenda 13 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=548",
+            "hash": "6574b17b4e0fe860dbf5866fac12c2a9ade769ae8389294b0fa5f734062c9b43"
+          },
+          "9e814baf7df472451268ef863b543dd47d961edefea61b133c4a532ada7dbd22": {
+            "name": "Lezione Live 13 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1584093037896",
+            "hash": "9e814baf7df472451268ef863b543dd47d961edefea61b133c4a532ada7dbd22"
+          }
+        },
+        "timers": {},
+        "hash": "7552211773c2435512c6ab186f563e8ca1f7e9d1df2086a58e85cc13508890c9"
+      },
+      {
+        "label": "Lezione#10 12 Marzo  2020",
+        "activities": {
+          "611fd5d353ad982b2b102b6a9d210f894dce0b18d60a3b46185854948a5fa5b8": {
+            "name": "Lezione Live 12 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=547",
+            "hash": "611fd5d353ad982b2b102b6a9d210f894dce0b18d60a3b46185854948a5fa5b8"
+          },
+          "57b6d5c5e5e651b0f847ebb9467ce57d90bee223972f1bfd89e5aeaf5b171358": {
+            "name": "Lezione Live 12 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1584017937532",
+            "hash": "57b6d5c5e5e651b0f847ebb9467ce57d90bee223972f1bfd89e5aeaf5b171358"
+          }
+        },
+        "timers": {},
+        "hash": "7368f517ef33f12afc602f7aa2fc3c5dd7069d0a2fccf83280b1b8c31fedcc7c"
+      },
+      {
+        "label": "Lezione#09 11 Marzo  2020",
+        "activities": {
+          "e73671a90c8b56d62c2ee57cb01e54d604c757dec018135c2f45dc4d9fcdbc70": {
+            "name": "Lezione Live 11 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=535",
+            "hash": "e73671a90c8b56d62c2ee57cb01e54d604c757dec018135c2f45dc4d9fcdbc70"
+          },
+          "d6b723bae2bc9f9c2c15671badc6ebcd198b88343912a562095a827d6cc8e130": {
+            "name": "Lezione Live 11 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1583933410619",
+            "hash": "d6b723bae2bc9f9c2c15671badc6ebcd198b88343912a562095a827d6cc8e130"
+          },
+          "cb1621e8c6634ab5973051eb3dbaa5a432b3b23b65b35e2828e468a7e580c3ab": {
+            "name": "Esempio \"30 e lode\" Prova Peer-Reviewed 11 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=539",
+            "hash": "cb1621e8c6634ab5973051eb3dbaa5a432b3b23b65b35e2828e468a7e580c3ab"
+          }
+        },
+        "timers": {},
+        "hash": "ea0e584d59e4c9dce7c2632754958a7e361292b505c1c42791c8220dc0def23d"
+      },
+      {
+        "label": "Lezione#08 09 Marzo  2020",
+        "activities": {
+          "7ddf8a2f1d380b452d702da0e595a3adae54696bdc8aabdcc91a41da2d84a761": {
+            "name": "Lezione Live 09 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=514",
+            "hash": "7ddf8a2f1d380b452d702da0e595a3adae54696bdc8aabdcc91a41da2d84a761"
+          },
+          "80fc8ec01f7cb1376a6a9fd7ca2330539d5ef2594059eefdd31393646f181a8b": {
+            "name": "Lezione Live 09 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1583763145425",
+            "hash": "80fc8ec01f7cb1376a6a9fd7ca2330539d5ef2594059eefdd31393646f181a8b"
+          }
+        },
+        "timers": {},
+        "hash": "b2bd56ee5a5f307eb8bbc5cbb503cfa2f4c66f2aad39720a07661fc18ba9d8c5"
+      },
+      {
+        "label": "Lezione#07 05 Marzo  2020",
+        "activities": {
+          "7e9aefd1c8a48c4c5bb11f254d70ea800c98dfe2e5a1e3c02ea0c8d8e11f9adb": {
+            "name": "Lezione Live 05 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=497",
+            "hash": "7e9aefd1c8a48c4c5bb11f254d70ea800c98dfe2e5a1e3c02ea0c8d8e11f9adb"
+          },
+          "acab58e15d49d77f488d461b7b1023917ce6052cbad33b66481aa3a44081887f": {
+            "name": "Lezione Live 05 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1583407261506",
+            "hash": "acab58e15d49d77f488d461b7b1023917ce6052cbad33b66481aa3a44081887f"
+          },
+          "f399e1dc1c61bdb032f765cc3386af782b4eb133fe30580f33974765377b5783": {
+            "name": "Esercizi #10 #11 #12 #13 #14 con tutte le risposte",
+            "type": "FILE",
+            "hash": "f399e1dc1c61bdb032f765cc3386af782b4eb133fe30580f33974765377b5783"
+          },
+          "1d46d6c4aa0a9b7380abf847bdf6c5720e6169861a78ef58af949d7a344794b9": {
+            "name": "Esercizi #15 #16 #17 #18 Con alcune risposte",
+            "type": "FILE",
+            "hash": "1d46d6c4aa0a9b7380abf847bdf6c5720e6169861a78ef58af949d7a344794b9"
+          },
+          "5326d75b317a945638cf08ae1685e06c0bb9c67d76baaf66231542bcd527d23f": {
+            "name": "Esercizio #18 05 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/assign/view.php?id=502",
+            "hash": "5326d75b317a945638cf08ae1685e06c0bb9c67d76baaf66231542bcd527d23f"
+          },
+          "8230e7a159d0b4e4e55379535176df0434764bd11f66bc2da10e5bc9e85e5e50": {
+            "name": "Esercizio #19 Con risposta",
+            "type": "FILE",
+            "hash": "8230e7a159d0b4e4e55379535176df0434764bd11f66bc2da10e5bc9e85e5e50"
+          }
+        },
+        "timers": {},
+        "hash": "4b5bab5db7b9104e7b1190953b112d701daf6805200b3e9a21a3606c219ac7fd"
+      },
+      {
+        "label": "Lezione#06 04 Marzo  2020",
+        "activities": {
+          "2b600b813cf96ee341e19d6518f7f50f55af31d99d88176ca6daf30c9fb3c11b": {
+            "name": "Lezione Live 04 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=494",
+            "hash": "2b600b813cf96ee341e19d6518f7f50f55af31d99d88176ca6daf30c9fb3c11b"
+          },
+          "9ebe37903458c56d9d5dcf604d16bfb85420c414cd9cf4c1c1e8f5e577c7494e": {
+            "name": "Lezione Live Risincronizzata 04 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=492",
+            "hash": "9ebe37903458c56d9d5dcf604d16bfb85420c414cd9cf4c1c1e8f5e577c7494e"
+          }
+        },
+        "timers": {},
+        "hash": "43f59febaa358ed181aa57d009a1eaa68d15b5242c8c61e2a982d03eac794072"
+      },
+      {
+        "label": "Lezione#05 03 Marzo  2020",
+        "activities": {
+          "5516595e26b8bae2c6235b03979be4da1ef3be9357e0c7f50249604a2929deb1": {
+            "name": "Lezione Live 03 Marzo 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/resource/view.php?id=488",
+            "hash": "5516595e26b8bae2c6235b03979be4da1ef3be9357e0c7f50249604a2929deb1"
+          },
+          "678814ff1077e92826da7aaa8311753d31adf3f5358711a89c44b30bf1014133": {
+            "name": "Lezione Live 03 Marzo 2020",
+            "type": "LIVE",
+            "link": "https://terameet.com/playback/presentation/2.0/playback.html?meetingId=fb9ebd06b67d6c40a37ed14282c2f80a131616bf-1583221975928",
+            "hash": "678814ff1077e92826da7aaa8311753d31adf3f5358711a89c44b30bf1014133"
+          }
+        },
+        "timers": {},
+        "hash": "91a3337b410111e8cb75a2696937eb6d1236f774cce985f08d0157c6d277bd10"
+      },
+      {
+        "label": "Lezione#04 28 Febbraio 2020",
+        "activities": {
+          "148f4e9e85742c46f1fa25b9f4bfb85298e63f23ce3e0b081c6aa6da79fc1cfa": {
+            "name": "Lezione Live 28 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/3029/mod_label/intro/disi_2020_02_28.pdf",
+            "hash": "148f4e9e85742c46f1fa25b9f4bfb85298e63f23ce3e0b081c6aa6da79fc1cfa"
+          },
+          "c1eb999c28c74bb7b09411dd3d1fa23d84b89f92bdabbb38f902fd686ef71e67": {
+            "name": "Lezione Live Risincronizzata 28 Febbraio 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=479",
+            "hash": "c1eb999c28c74bb7b09411dd3d1fa23d84b89f92bdabbb38f902fd686ef71e67"
+          }
+        },
+        "timers": {},
+        "hash": "2512e0664d95e95dc85de23966e2ddfc53d6e98ef482361b6d3c51997fa6a38b"
+      },
+      {
+        "label": "Lezione#03 25 Febbraio 2020",
+        "activities": {
+          "dc1529047143274ace81432678e98ada002a3c4a2ee30c101e9bb26402205592": {
+            "name": "Lezione Live 25 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/2759/mod_label/intro/disi_2020_02_25.pdf",
+            "hash": "dc1529047143274ace81432678e98ada002a3c4a2ee30c101e9bb26402205592"
+          },
+          "3359b0deaebc8ca0fe981d31a00e620343cfd0dbf7f3c9e3a19baae85499df2e": {
+            "name": "Lezione Live Risincronizzata 25 Febbraio 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=462",
+            "hash": "3359b0deaebc8ca0fe981d31a00e620343cfd0dbf7f3c9e3a19baae85499df2e"
+          },
+          "a8e6e0fe6da283ae68dc968e1c0752899dd8ca13b4737dc1644e9ac964eddca2": {
+            "name": "Esercizi #7 #8 #9",
+            "type": "FILE",
+            "hash": "a8e6e0fe6da283ae68dc968e1c0752899dd8ca13b4737dc1644e9ac964eddca2"
+          }
+        },
+        "timers": {},
+        "hash": "4759a589c51dfcac8c5a1a4d8573e664f9493aa7a1e41435b3f1ae0621c17c34"
+      },
+      {
+        "label": "Lezione#02 24 Febbraio 2020",
+        "activities": {
+          "6febb053a0b4ec9953f09de8aa2c758053e424c1e22a84abed65021470d6b396": {
+            "name": "Lezione Live 24 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/2760/mod_label/intro/disi_2020_02_24.pdf",
+            "hash": "6febb053a0b4ec9953f09de8aa2c758053e424c1e22a84abed65021470d6b396"
+          },
+          "f5b00f1608e89481216a765df78b481cee67d42730b0f8b6b74c1361aab4a282": {
+            "name": "Lezione Live Risincronizzata 24 Febbraio 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=459",
+            "hash": "f5b00f1608e89481216a765df78b481cee67d42730b0f8b6b74c1361aab4a282"
+          },
+          "9920c83b08d0ab6f0be7bd45d9228d6abf89d78a038dbd8ea20e16b74e120b2c": {
+            "name": "Cinematica Teoria (parte 1)",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/2635/mod_label/intro/Cinematica1.pdf",
+            "hash": "9920c83b08d0ab6f0be7bd45d9228d6abf89d78a038dbd8ea20e16b74e120b2c"
+          },
+          "b94f45cf3d945cc0a2511183854dcb63458c4217ef167d00298eb81fea8e0cb6": {
+            "name": "Dinamica Teoria (parte 2)",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/pluginfile.php/2636/mod_label/intro/Dinamica1.pdf",
+            "hash": "b94f45cf3d945cc0a2511183854dcb63458c4217ef167d00298eb81fea8e0cb6"
+          }
+        },
+        "timers": {},
+        "hash": "8bcbcc40bc5a802a8a81336b530a3ff0828440bbfde9bc18cf1ca504eadea883"
+      },
+      {
+        "label": "Lezione#01 17 Febbraio 2020",
+        "activities": {
+          "90632b303f158c199d9a9995cc6b8eb26fcdf1ba46c069f653657e353d36f5e1": {
+            "name": "Lezione dal vivo 17 Febbraio 2020",
+            "type": "LIVE",
+            "link": "https://zenogaburro.com/mod/page/view.php?id=430",
+            "hash": "90632b303f158c199d9a9995cc6b8eb26fcdf1ba46c069f653657e353d36f5e1"
+          },
+          "e6c3f6fa5300fa863ba135b85ef7c2141917b6e8c7f57c5371f45be9ef8832d7": {
+            "name": "Meccanica, quiz 22 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=445",
+            "hash": "e6c3f6fa5300fa863ba135b85ef7c2141917b6e8c7f57c5371f45be9ef8832d7"
+          },
+          "5dbf796348818d8393d6f82347f64f30596b2eb4dede9a180cffd2ebed0d20b0": {
+            "name": "Meccanica, quiz 21 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=442",
+            "hash": "5dbf796348818d8393d6f82347f64f30596b2eb4dede9a180cffd2ebed0d20b0"
+          },
+          "de9c567939f80573ff3ca9819c41bff8337e86495ef4de03e075745ed05db625": {
+            "name": "Meccanica, quiz 20 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=438",
+            "hash": "de9c567939f80573ff3ca9819c41bff8337e86495ef4de03e075745ed05db625"
+          },
+          "2250e790928dbec8b1cbcf09943db78267d92063a1dcb28a26542c074a2e7c11": {
+            "name": "Meccanica, quiz 20 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=434",
+            "hash": "2250e790928dbec8b1cbcf09943db78267d92063a1dcb28a26542c074a2e7c11"
+          },
+          "ab374ca1f05d205aa2d5bd9c39122dc7fae725974a2e3b4d65de0f53f63f5f3d": {
+            "name": "Meccanica, quiz 18 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=432",
+            "hash": "ab374ca1f05d205aa2d5bd9c39122dc7fae725974a2e3b4d65de0f53f63f5f3d"
+          },
+          "5e1caf40fe1940885b825d0faa912451c7ea1b8e4a989574191e973370faab1f": {
+            "name": "Meccanica, quiz 17 Febbraio 2020",
+            "type": "FILE",
+            "link": "https://zenogaburro.com/mod/quiz/view.php?id=425",
+            "hash": "5e1caf40fe1940885b825d0faa912451c7ea1b8e4a989574191e973370faab1f"
+          }
+        },
+        "timers": {},
+        "hash": "46d14bf946fc6703ed45e4020f18bbdf0e0014eba09d08ae0686ac350db874eb"
+      }
+    ],
+    "url": "https://zenogaburro.com/course/view.php?id=5",
+    "name": "Fisica 1",
+    "live": {
+      "isLive": false,
+      "status": ""
+    }
+  }
+}

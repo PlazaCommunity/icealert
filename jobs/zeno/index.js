@@ -3,9 +3,11 @@ import cron from 'node-cron';
 import moment from 'moment-timezone';
 import fs from 'fs';
 
-import notify from './notify.js'
+import alert from './alert.js';
 import parse from './parse.js';
-import Class from '../types/class.js';
+
+import config from '$/config/index.js';
+import Class from '$/types/class.js';
 
 const TAG = '[ZENO]';
 
@@ -42,7 +44,7 @@ const job = (state, hook) => {
 };
 
 const schedule = async (state, hook) => {
-  if (process.env.NODE_ENV === 'production') {
+  if (config.ENV === 'production') {
     job(state, hook)();
     cron.schedule('*/15 7-17 * * *', job(state, hook)); // UTC time
   } else {
@@ -53,28 +55,25 @@ const schedule = async (state, hook) => {
 const scrape = async (page) => {
   // If cache exists and we are in a development environment,
   // we can scrape it instead of opening a pupeteer instance
-  if (process.env.NODE_ENV !== 'production') {
+  if (config.ENV !== 'production') {
     let cache = true;
-    cache &= fs.existsSync('data/zeno-home.html');
-    cache &= fs.existsSync('data/zeno-live.html');
+    cache &= fs.existsSync('.cache/zeno-home.html');
+    cache &= fs.existsSync('.cache/zeno-live.html');
     if (cache) {
-      console.log(
-        TAG,
-        `Operating from cache as we are in ${process.env.NODE_ENV} env.`
-      );
-      const homeHTML = fs.readFileSync('data/zeno-home.html');
-      const liveHTML = fs.readFileSync('data/zeno-live.html');
+      console.log(TAG, `Operating from cache as we are in ${config.ENV} env.`);
+      const homeHTML = fs.readFileSync('.cache/zeno-home.html');
+      const liveHTML = fs.readFileSync('.cache/zeno-live.html');
       const home = await parse.home(homeHTML);
       const live = await parse.live(liveHTML);
 
       const fisica = new Class();
-      fisica.sections = home
-      fisica.name = "Fisica 1"
-      fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
+      fisica.sections = home;
+      fisica.name = 'Fisica 1';
+      fisica.url = 'https://zenogaburro.com/course/view.php?id=5';
       fisica.live = live;
-      const zeno = {"Fisica 1": fisica};
+      const zeno = { 'Fisica 1': fisica };
 
-      fs.writeFile('data/zeno.json', JSON.stringify(zeno, null, 2), () => {});
+      fs.writeFile('.cache/zeno.json', JSON.stringify(zeno, null, 2), () => {});
 
       console.log(TAG, 'Completed job');
       return zeno;
@@ -88,8 +87,8 @@ const scrape = async (page) => {
   await page.goto('https://zenogaburro.com/login/index.php');
 
   await page.waitForSelector('#loginbtn');
-  await page.type('#username', process.env.ZG_USERNAME);
-  await page.type('#password', process.env.ZG_PASSWORD);
+  await page.type('#username', config.ZG_USERNAME);
+  await page.type('#password', config.ZG_PASSWORD);
 
   await page.click('#loginbtn');
 
@@ -111,18 +110,18 @@ const scrape = async (page) => {
   const live = await parse.live(liveHTML);
 
   // Chaching for development environment
-  if (process.env.NODE_ENV !== 'production') {
+  if (config.ENV !== 'production') {
     await console.log(TAG, 'Saving cache...');
-    fs.writeFile('data/zeno-home.html', homeHTML, () => {});
-    fs.writeFile('data/zeno-live.html', liveHTML, () => {});
+    fs.writeFile('.cache/zeno-home.html', homeHTML, () => {});
+    fs.writeFile('.cache/zeno-live.html', liveHTML, () => {});
   }
 
   const fisica = new Class();
-  fisica.sections = home
-  fisica.name = "Fisica 1"
-  fisica.url = 'https://zenogaburro.com/course/view.php?id=5'
+  fisica.sections = home;
+  fisica.name = 'Fisica 1';
+  fisica.url = 'https://zenogaburro.com/course/view.php?id=5';
   fisica.live = live;
-  const zeno = {"Fisica 1": fisica};
+  const zeno = { 'Fisica 1': fisica };
 
   console.log(TAG, 'Completed job');
 
@@ -132,5 +131,5 @@ const scrape = async (page) => {
 export default {
   schedule,
   scrape,
-  notify,
+  alert,
 };

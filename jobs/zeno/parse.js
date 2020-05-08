@@ -1,9 +1,9 @@
 import cheerio from 'cheerio';
 import he from 'he';
 
-import Activity from '../types/activity.js';
-import Section from '../types/section.js';
-import Timer from '../types/timer.js';
+import Activity from '$/types/activity.js';
+import Section from '$/types/section.js';
+import Timer from '$/types/timer.js';
 
 const ICONS_MAP = {
   'link.png': Activity.types.URL,
@@ -54,7 +54,7 @@ const activity = (activityHTML) => {
   activity.name = name;
   activity.link = $('a').attr('href');
 
-  const src = $('table tbody tr img').attr('src')
+  const src = $('table tbody tr img').attr('src');
   activity.type = typeFromURL(src);
 
   activity.hash = activity.createHash();
@@ -91,7 +91,7 @@ const timer = (timerHTML) => {
 
     return timer;
   }
-  
+
   return undefined;
 };
 
@@ -109,17 +109,17 @@ const section = (sectionHTML) => {
       const isTimer = $(element).find('.seconds').length;
 
       if (hasName) {
-        const res = activity($(element).find('.activity-wrapper').html())
+        const res = activity($(element).find('.activity-wrapper').html());
         if (res) section.activities[res.hash] = res;
       }
 
       if (isVideo) {
-        const res = video($(element).find('.activity-wrapper').html())
+        const res = video($(element).find('.activity-wrapper').html());
         if (res) section.activities[res.hash] = res;
       }
 
       if (isTimer) {
-        const res = timer($(element).find('.activity-wrapper').html())
+        const res = timer($(element).find('.activity-wrapper').html());
         if (res) section.timers[res.hash] = res;
       }
     });
@@ -136,7 +136,7 @@ const home = (homeHTML) => {
   let home = [];
 
   $('ul.buttons li').each((_, element) => {
-    const res = section($(element).html())
+    const res = section($(element).html());
     if (res) home.push(res);
   });
   return home;

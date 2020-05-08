@@ -3,10 +3,11 @@ import cron from 'node-cron';
 import moment from 'moment-timezone';
 import fs from 'fs';
 
-import notify from './notify.js';
+import alert from './alert.js';
 import parse from './parse.js';
 
-import Class from '../types/class.js';
+import config from '$/config/index.js';
+import Class from '$/types/class.js';
 
 const TAG = '[DOL]';
 
@@ -43,7 +44,7 @@ const job = (state, hook) => {
 };
 
 const schedule = async (state, hook) => {
-  if (process.env.NODE_ENV === 'production') {
+  if (config.ENV === 'production') {
     job(state, hook)();
     cron.schedule('*/15 7-17 * * *', job(state, hook)); // UTC time
   } else {
@@ -54,29 +55,31 @@ const schedule = async (state, hook) => {
 const scrape = async (page) => {
   // If cache exists and we are in a development environment,
   // we can scrape it instead of opening a pupeteer instance
-  if (process.env.NODE_ENV !== 'production') {
+  if (config.ENV !== 'production') {
     let cache = true;
-    cache &= fs.existsSync('data/dol-courses.html');
+    cache &= fs.existsSync('.cache/dol-courses.html');
     if (cache) {
-      const coursesHTML = fs.readFileSync('data/dol-courses.html');
+      const coursesHTML = fs.readFileSync('.cache/dol-courses.html');
       const courses = parse.courses(coursesHTML);
-      
+
       for (let i = 0; i < courses.length; i++) {
-        const course = courses[i]
-        cache &= fs.existsSync(`data/dol-course-${course.id}.html`);
+        const course = courses[i];
+        cache &= fs.existsSync(`.cache/dol-course-${course.id}.html`);
       }
 
       if (cache) {
         console.log(
           TAG,
-          `Operating from cache as we are in ${process.env.NODE_ENV} env.`
+          `Operating from cache as we are in ${config.ENV} env.`
         );
 
         const classes = {};
 
         for (let i = 0; i < courses.length; i++) {
-          const course = courses[i]
-          const courseHTML = fs.readFileSync(`data/dol-course-${course.id}.html`);
+          const course = courses[i];
+          const courseHTML = fs.readFileSync(
+            `.cache/dol-course-${course.id}.html`
+          );
           const sections = parse.sections(courseHTML);
           classes[course.name] = new Class();
           classes[course.name].sections = sections;
@@ -84,7 +87,11 @@ const scrape = async (page) => {
           classes[course.name].url = course.link;
         }
 
-        fs.writeFile('data/dol-result.json', JSON.stringify(classes, null, 2), () => {});
+        fs.writeFile(
+          '.cache/dol-result.json',
+          JSON.stringify(classes, null, 2),
+          () => {}
+        );
         console.log(TAG, 'Completed job');
         return {
           classes,
@@ -97,12 +104,12 @@ const scrape = async (page) => {
   await page.goto('https://webapps.unitn.it/GestioneCorsi/IndexAuth');
 
   await page.waitForSelector('#btnAccedi');
-  await page.type('#clid', process.env.DOL_USERNAME);
-  await page.type('#inputPassword', process.env.DOL_PASSWORD);
+  await page.type('#clid', config.DOL_USERNAME);
+  await page.type('#inputPassword', config.DOL_PASSWORD);
 
   await page.click('#btnAccedi');
 
-  await page.waitForSelector('.table-striped')
+  await page.waitForSelector('.table-striped');
 
   console.log(TAG, 'Evaluating webapps.unitn.it courses...');
   const coursesHTML = await page.evaluate(() => document.body.innerHTML);
@@ -111,7 +118,7 @@ const scrape = async (page) => {
   const classes = {};
 
   for (let i = 0; i < courses.length; i++) {
-    const course = courses[i]
+    const course = courses[i];
     console.log(TAG, `Visiting course ID: ${course.id}`);
 
     await page.goto(course.link);
@@ -124,28 +131,32 @@ const scrape = async (page) => {
     classes[course.name].url = course.link;
 
     // Chaching course for development environment
-    if (process.env.NODE_ENV !== 'production') {
+    if (config.ENV !== 'production') {
       await console.log(TAG, 'Saving cache...');
-      fs.writeFile(`data/dol-course-${course.id}.html`, courseHTML, () => {});
-      fs.writeFile('data/dol-result.json', JSON.stringify(classes, null, 2), () => {});
+      fs.writeFile(`.cache/dol-course-${course.id}.html`, courseHTML, () => {});
+      fs.writeFile(
+        '.cache/dol-result.json',
+        JSON.stringify(classes, null, 2),
+        () => {}
+      );
     }
   }
 
   // Chaching courses homepage for development environment
-  if (process.env.NODE_ENV !== 'production') {
+  if (config.ENV !== 'production') {
     await console.log(TAG, 'Saving cache...');
-    fs.writeFile('data/dol-courses.html', coursesHTML, () => {});
+    fs.writeFile('.cache/dol-courses.html', coursesHTML, () => {});
   }
 
   console.log(TAG, 'Completed job');
 
   return {
-    classes
+    classes,
   };
 };
 
 export default {
   schedule,
   scrape,
-  notify,
+  alert,
 };
