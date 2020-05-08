@@ -24,13 +24,14 @@ class WebhooksService {
               color: 15258703,
               footer: {
                 text: config.ENV,
-                icon_url: config.AUTHOR_IMAGE
+                icon_url: config.AUTHOR_IMAGE,
               },
             },
           ],
         })
         .catch(() => {
-          this.db.get('bot.webhooks')
+          this.db
+            .get('bot.webhooks')
             .remove({
               name: hook.name,
             })
