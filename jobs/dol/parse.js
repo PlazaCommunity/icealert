@@ -1,7 +1,7 @@
 import cheerio from 'cheerio';
 
-import Activity from '$/types/activity.js';
-import Section from '$/types/section.js';
+import Activity from '../../types/activity.js';
+import Section from '../../types/section.js';
 
 const TYPE_MAP = {
   File: Activity.types.FILE,

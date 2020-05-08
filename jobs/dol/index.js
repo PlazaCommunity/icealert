@@ -6,8 +6,8 @@ import fs from 'fs';
 import alert from './alert.js';
 import parse from './parse.js';
 
-import config from '$/config/index.js';
-import Class from '$/types/class.js';
+import config from '../../config/index.js';
+import Class from '../../types/class.js';
 
 const TAG = '[DOL]';
 

@@ -1,5 +1,5 @@
-import notify from '$/notify/index.js';
-import config from '$/config/index.js';
+import notify from '../../notify/index.js';
+import config from '../../config/index.js';
 
 const TAG = '[ZENO]';
 const COURSE = 'Fisica 1';

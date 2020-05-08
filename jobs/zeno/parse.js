@@ -1,9 +1,9 @@
 import cheerio from 'cheerio';
 import he from 'he';
 
-import Activity from '$/types/activity.js';
-import Section from '$/types/section.js';
-import Timer from '$/types/timer.js';
+import Activity from '../../types/activity.js';
+import Section from '../../types/section.js';
+import Timer from '../../types/timer.js';
 
 const ICONS_MAP = {
   'link.png': Activity.types.URL,
