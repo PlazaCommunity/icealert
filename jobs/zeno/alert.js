@@ -7,7 +7,7 @@ const COURSE = 'Fisica 1';
 const alert = (bot, db) => async (result) => {
   if (!result) {
     const message = `⛔️ *ERROR*: job _ZENO_ failed to update! Check status for more info.`;
-    bot.telegram.sendMessage(config.ADMIN, message, notify.Extra.markdown());
+    bot.telegram.sendToAdmin(message);
     return;
   }
 
@@ -15,7 +15,7 @@ const alert = (bot, db) => async (result) => {
   if (!old) {
     db.set('zeno', result).write();
     const message = `✳️ *INFO*: job _ZENO_ was never initialized. First run will not notify changes.`;
-    bot.telegram.sendMessage(config.ADMIN, message, notify.Extra.markdown());
+    bot.telegram.sendToAdmin(message);
     return;
   }
 
@@ -32,9 +32,9 @@ const alert = (bot, db) => async (result) => {
     if (post.live.isLive) {
       messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno è ora *in live*.`;
     } else {
-      message.live = `🎓*${COURSE}*\n\n🅾️ Zeno ha *terminato la sua live*.`;
+      messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno ha *terminato la sua live*.`;
     }
-    bot.telegram.sendToGroup(message.live);
+    bot.telegram.sendToGroup(messages.live);
   }
 
   let message = '';

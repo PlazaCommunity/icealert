@@ -12,7 +12,7 @@ const COURSE_EMOJI = {
 const alert = (bot, db) => async (result) => {
   if (!result) {
     const message = `⛔️ *ERROR*: job _DOL_ failed to update! Check status for more info.`;
-    bot.telegram.sendMessage(config.ADMIN, message, notify.Extra.markdown());
+    bot.telegram.sendToAdmin(message);
     return;
   }
 
@@ -20,7 +20,7 @@ const alert = (bot, db) => async (result) => {
   if (!old) {
     db.set('dol', result).write();
     const message = `✳️ *INFO*: job _DOL_ was never initialized. First run will not notify changes.`;
-    bot.telegram.sendMessage(config.ADMIN, message, notify.Extra.markdown());
+    bot.telegram.sendToAdmin(message);
     return;
   }
 
