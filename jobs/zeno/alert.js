@@ -27,18 +27,6 @@ const alert = (bot, db) => async (result) => {
     changes: '',
   };
 
-  // Check if the professor went live
-  if (pre.live.isLive != post.live.isLive) {
-    if (post.live.isLive) {
-      messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno è ora *in live*.`;
-    } else {
-      messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno ha *terminato la sua live*.`;
-    }
-    bot.telegram.sendToGroup(messages.live);
-  }
-
-  let message = '';
-
   // Check for new or modified activities
   post.sections.forEach((section) => {
     const record = pre.sections.find(
