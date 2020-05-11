@@ -1,6 +1,3 @@
-import notify from '../../notify/index.js';
-import config from '../../config/index.js';
-
 const TAG = '[DOL]';
 
 const COURSE_EMOJI = {
