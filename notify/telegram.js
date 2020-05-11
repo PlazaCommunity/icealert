@@ -177,7 +177,7 @@ const initialize = async (db, state) => {
    */
   bot.command('restore', (ctx) => {
     if (ctx.from.is_admin) {
-      state.jobs =  {
+      state.jobs = {
         zeno: {
           operational: true,
           error: undefined,
@@ -189,9 +189,7 @@ const initialize = async (db, state) => {
           lastExecution: undefined,
         },
       };
-      ctx
-        .replyWithMarkdown('✅ *Restored*')
-        .then(() => process.exit(0));
+      ctx.replyWithMarkdown('✅ *Restored*').then(() => process.exit(0));
     }
   });
 

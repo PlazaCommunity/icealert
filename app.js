@@ -37,7 +37,7 @@ const TAG = '[MAIN]';
       },
     },
   };
-  
+
   const notificator = await notify.initialize(db, state);
   logger.initialize(async (message) => {
     if (config.ENV === 'production') {

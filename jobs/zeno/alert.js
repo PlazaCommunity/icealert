@@ -1,6 +1,3 @@
-import notify from '../../notify/index.js';
-import config from '../../config/index.js';
-
 const TAG = '[ZENO]';
 const COURSE = 'Fisica 1';
 
@@ -26,6 +23,14 @@ const alert = (bot, db) => async (result) => {
     live: '',
     changes: '',
   };
+
+  if (pre.live.isLive != post.live.isLive) {
+    if (post.live.isLive) {
+      messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno è ora *in live*.`;
+    } else {
+      messages.live = `🎓*${COURSE}*\n\n🅾️ Zeno ha *terminato la sua live*.`;
+    }
+  }
 
   // Check for new or modified activities
   post.sections.forEach((section) => {
