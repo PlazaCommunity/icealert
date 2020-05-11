@@ -100,6 +100,9 @@ const scrape = async (page) => {
     }
   }
 
+  // DOL's page sometime timeouts at 30'000
+  await page.setDefaultNavigationTimeout(60000);
+
   console.log(TAG, 'Browsing webapps.unitn.it with puppeteer');
   await page.goto('https://webapps.unitn.it/GestioneCorsi/IndexAuth');
 

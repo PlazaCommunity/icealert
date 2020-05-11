@@ -173,6 +173,29 @@ const initialize = async (db, state) => {
   });
 
   /**
+   * Restore state of jobs
+   */
+  bot.command('restore', (ctx) => {
+    if (ctx.from.is_admin) {
+      state.jobs =  {
+        zeno: {
+          operational: true,
+          error: undefined,
+          lastExecution: undefined,
+        },
+        dol: {
+          operational: true,
+          error: undefined,
+          lastExecution: undefined,
+        },
+      };
+      ctx
+        .replyWithMarkdown('✅ *Restored*')
+        .then(() => process.exit(0));
+    }
+  });
+
+  /**
    * Emergency remote shutdown
    */
   bot.command('stop', (ctx) => {
