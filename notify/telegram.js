@@ -189,7 +189,7 @@ const initialize = async (db, state) => {
           lastExecution: undefined,
         },
       };
-      ctx.replyWithMarkdown('✅ *Restored*').then(() => process.exit(0));
+      ctx.replyWithMarkdown('✅ *Restored*');
     }
   });
 
